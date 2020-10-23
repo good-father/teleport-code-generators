@@ -5,8 +5,6 @@ import {
   UIDLRepeatNode,
   UIDLConditionalNode,
   UIDLConditionalExpression,
-  UIDLDynamicReference,
-  UIDLSlotNode,
   UIDLNode,
 } from '@teleporthq/teleport-types'
 
@@ -26,6 +24,7 @@ import {
   addChildJSXTag,
   addAttributeToJSXTag,
   addDynamicAttributeToJSXTag,
+  addSlotAttributesToJSXTag,
 } from '../../utils/ast-utils'
 import { createJSXTag, createSelfClosingJSXTag } from '../../builders/ast-builders'
 import { DEFAULT_JSX_OPTIONS } from './constants'
@@ -85,8 +84,12 @@ const generateElementNode: NodeToJSX<UIDLElementNode, types.JSXElement> = (
           addDynamicAttributeToJSXTag(elementTag, attrKey, attributeValue.content.id)
           break
         case 'static':
-          const { content } = attributeValue
-          addAttributeToJSXTag(elementTag, attrKey, content)
+          addAttributeToJSXTag(elementTag, attrKey, attributeValue.content)
+          break
+        case 'slot':
+          // extra slot as props
+          const slotContent = generateNode(attributeValue.content, params, jsxOptions)
+          addSlotAttributesToJSXTag(elementTag, attrKey, slotContent as types.JSXElement | string)
           break
         default:
           throw new Error(
@@ -145,13 +148,6 @@ const generateNode: NodeToJSX<UIDLNode, JSXASTReturnType> = (node, params, optio
     case 'conditional':
       return generateConditionalNode(node, params, options)
 
-    case 'slot':
-      if (options.slotHandling === 'native') {
-        return generateNativeSlotNode(node, params, options)
-      } else {
-        return generatePropsSlotNode(node, params, options)
-      }
-
     default:
       throw new Error(
         `generateNodeSyntax encountered a node of unsupported type: ${JSON.stringify(
@@ -207,63 +203,4 @@ const generateConditionalNode: NodeToJSX<UIDLConditionalNode, types.LogicalExpre
       : node.content.condition
 
   return createConditionalJSXExpression(subTree, condition, conditionIdentifier)
-}
-
-const generatePropsSlotNode: NodeToJSX<UIDLSlotNode, types.JSXExpressionContainer> = (
-  node: UIDLSlotNode,
-  params,
-  options
-) => {
-  // React/Preact do not have native slot nodes and implement this differently through the props.children syntax.
-  // Unfortunately, names slots are ignored because React/Preact treat all the inner content of the component as props.children
-  const childrenProp: UIDLDynamicReference = {
-    type: 'dynamic',
-    content: {
-      referenceType: 'prop',
-      id: 'children',
-    },
-  }
-
-  const childrenExpression = createDynamicValueExpression(childrenProp, options)
-
-  if (node.content.fallback) {
-    const fallbackContent = generateNode(node.content.fallback, params, options)
-    // only static dynamic or element are allowed here
-    const fallbackNode =
-      typeof fallbackContent === 'string'
-        ? types.stringLiteral(fallbackContent)
-        : (fallbackContent as types.JSXElement | types.MemberExpression)
-
-    // props.children with fallback
-    return types.jsxExpressionContainer(
-      types.logicalExpression('||', childrenExpression, fallbackNode)
-    )
-  }
-
-  return types.jsxExpressionContainer(childrenExpression)
-}
-
-const generateNativeSlotNode: NodeToJSX<UIDLSlotNode, types.JSXElement> = (
-  node,
-  params,
-  options
-) => {
-  const slotNode = createSelfClosingJSXTag('slot')
-
-  if (node.content.name) {
-    addAttributeToJSXTag(slotNode, 'name', node.content.name)
-  }
-
-  if (node.content.fallback) {
-    const fallbackContent = generateNode(node.content.fallback, params, options)
-    if (typeof fallbackContent === 'string') {
-      addChildJSXText(slotNode, fallbackContent)
-    } else if (fallbackContent.type === 'MemberExpression') {
-      addChildJSXTag(slotNode, types.jsxExpressionContainer(fallbackContent))
-    } else {
-      addChildJSXTag(slotNode, fallbackContent as types.JSXElement)
-    }
-  }
-
-  return slotNode
 }

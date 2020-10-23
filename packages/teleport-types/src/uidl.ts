@@ -117,10 +117,7 @@ export interface UIDLRawValue {
 
 export interface UIDLSlotNode {
   type: 'slot'
-  content: {
-    name?: string
-    fallback?: UIDLElementNode | UIDLStaticValue | UIDLDynamicReference
-  }
+  content: UIDLElementNode | UIDLStaticValue | UIDLDynamicReference
 }
 
 export interface UIDLNestedStyleDeclaration {
@@ -195,8 +192,8 @@ export type UIDLNode =
   | UIDLRepeatNode
   | UIDLElementNode
   | UIDLConditionalNode
-  | UIDLSlotNode
   | UIDLImportReference
+  | UIDLSlotNode
 
 export type UIDLAttributeValue = UIDLDynamicReference | UIDLStaticValue | UIDLImportReference
 

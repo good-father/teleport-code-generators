@@ -7,7 +7,6 @@ import {
   UIDLNode,
   UIDLConditionalNode,
   UIDLRepeatNode,
-  UIDLSlotNode,
   UIDLElementNode,
   UIDLStaticValue,
   UIDLStyleSetConditions,
@@ -171,17 +170,6 @@ const parseComponentNode = (node: Record<string, unknown>): UIDLNode => {
       }
 
       return repeatNode
-
-    case 'slot':
-      const slotNode = (node as unknown) as UIDLSlotNode
-
-      if (slotNode.content.fallback) {
-        slotNode.content.fallback = parseComponentNode(
-          (slotNode.content.fallback as unknown) as Record<string, unknown>
-        ) as UIDLElementNode | UIDLStaticValue | UIDLDynamicReference
-      }
-
-      return slotNode
 
     case 'dynamic':
     case 'static':

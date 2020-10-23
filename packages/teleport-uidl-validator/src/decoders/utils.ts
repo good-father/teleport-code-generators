@@ -248,10 +248,15 @@ export const importReferenceDecoder: Decoder<UIDLImportReference> = object({
   }),
 })
 
+// @ts-ignore
 export const attributeValueDecoder: Decoder<UIDLAttributeValue> = union(
   dynamicValueDecoder,
   staticValueDecoder,
-  importReferenceDecoder
+  importReferenceDecoder,
+  object({
+    type: constant('slot'),
+    content: object(),
+  })
 )
 
 export const styleValueDecoder: Decoder<UIDLStyleValue> = union(
@@ -391,18 +396,12 @@ export const elementDecoder: Decoder<VUIDLElement> = object({
 
 export const slotNodeDecoder: Decoder<VUIDLSlotNode> = object({
   type: constant('slot'),
-  content: union(
-    object({
-      name: optional(string()),
-      fallback: optional(
-        union(
-          staticValueDecoder,
-          dynamicValueDecoder,
-          lazy(() => elementNodeDecoder)
-        )
-      ),
-    }),
-    object({})
+  content: optional(
+    union(
+      staticValueDecoder,
+      dynamicValueDecoder,
+      lazy(() => elementNodeDecoder)
+    )
   ),
 })
 
@@ -451,6 +450,5 @@ export const uidlNodeDecoder: Decoder<VUIDLNode> = union(
   rawValueDecoder,
   conditionalNodeDecoder,
   repeatNodeDecoder,
-  slotNodeDecoder,
   string()
 )

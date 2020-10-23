@@ -183,8 +183,8 @@ export const traverseNodes = (
       break
 
     case 'slot':
-      if (node.content.fallback) {
-        traverseNodes(node.content.fallback, fn, node)
+      if (node.content) {
+        traverseNodes(node.content, fn, node)
       }
       break
 
@@ -233,8 +233,8 @@ export const traverseElements = (node: UIDLNode, fn: (element: UIDLElement) => v
       break
 
     case 'slot':
-      if (node.content.fallback) {
-        traverseElements(node.content.fallback, fn)
+      if (node.content) {
+        traverseElements(node.content, fn)
       }
       break
 
@@ -272,8 +272,8 @@ export const traverseRepeats = (node: UIDLNode, fn: (element: UIDLRepeatContent)
       break
 
     case 'slot':
-      if (node.content.fallback) {
-        traverseRepeats(node.content.fallback, fn)
+      if (node.content) {
+        traverseRepeats(node.content, fn)
       }
       break
 
@@ -478,7 +478,7 @@ export const transformAttributesAssignmentsToJson = (
     if (!Array.isArray(attributeContent) && entityType === 'object') {
       // if this value is already properly declared, make sure it is not
       const { type } = attributeContent as Record<string, unknown>
-      if (['dynamic', 'static', 'import'].indexOf(type as string) !== -1) {
+      if (['dynamic', 'static', 'import', 'slot'].indexOf(type as string) !== -1) {
         acc[key] = attributeContent as UIDLAttributeValue
         return acc
       }
@@ -546,8 +546,8 @@ export const removeChildNodes = (
       break
 
     case 'slot':
-      if (node.content.fallback) {
-        removeChildNodes(node.content.fallback, criteria)
+      if (node.content) {
+        removeChildNodes(node.content, criteria)
       }
       break
 

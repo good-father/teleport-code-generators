@@ -58,7 +58,17 @@ const generateElementNode: NodeToHTML<UIDLElementNode, HastNode> = (node, params
   if (attrs) {
     Object.keys(attrs).forEach((attrKey) => {
       const attrValue = attrs[attrKey]
-      handleAttribute(htmlNode, name, attrKey, attrValue, params, templateSyntax, node)
+      // extract slot into children
+      if (attrValue.type === 'slot') {
+        const slotTag = generateNode(attrValue.content, params, templateSyntax)
+        if (typeof slotTag === 'string') {
+          hastUtils.addTextNode(htmlNode, slotTag)
+        } else {
+          hastUtils.addChildNode(htmlNode, slotTag)
+        }
+      } else {
+        handleAttribute(htmlNode, name, attrKey, attrValue, params, templateSyntax, node)
+      }
     })
   }
 
@@ -104,9 +114,6 @@ const generateNode: NodeToHTML<UIDLNode, HastNode | string> = (node, params, tem
 
     case 'conditional':
       return generateConditionalNode(node, params, templateSyntax)
-
-    case 'slot':
-      return generateSlotNode(node, params, templateSyntax)
 
     default:
       throw new Error(
@@ -168,25 +175,4 @@ const generateConditionalNode: NodeToHTML<UIDLConditionalNode, HastNode> = (
   const conditionalStatement = createConditionalStatement(node)
   hastUtils.addAttributeToNode(conditionalTag, templateSyntax.conditionalAttr, conditionalStatement)
   return conditionalTag
-}
-
-const generateSlotNode: NodeToHTML<UIDLSlotNode, HastNode> = (node, params, templateSyntax) => {
-  const slotNode = createHTMLNode('slot')
-
-  if (node.content.name) {
-    hastUtils.addAttributeToNode(slotNode, 'name', node.content.name)
-  }
-
-  if (node.content.fallback) {
-    const { fallback } = node.content
-    const fallbackContent = generateNode(fallback, params, templateSyntax)
-
-    if (typeof fallbackContent === 'string') {
-      hastUtils.addTextNode(slotNode, fallbackContent)
-    } else {
-      hastUtils.addChildNode(slotNode, fallbackContent)
-    }
-  }
-
-  return slotNode
 }

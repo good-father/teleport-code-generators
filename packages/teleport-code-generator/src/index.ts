@@ -19,112 +19,33 @@ import {
   createReactProjectGenerator,
   ReactProjectMapping,
 } from '@teleporthq/teleport-project-generator-react'
-import {
-  createNextProjectGenerator,
-  NextTemplate,
-} from '@teleporthq/teleport-project-generator-next'
-import {
-  VueTemplate,
-  createVueProjectGenerator,
-  VueProjectMapping,
-} from '@teleporthq/teleport-project-generator-vue'
-import {
-  NuxtTemplate,
-  createNuxtProjectGenerator,
-} from '@teleporthq/teleport-project-generator-nuxt'
-import {
-  PreactTemplate,
-  PreactCodesandBoxTemplate,
-  createPreactProjectGenerator,
-  PreactProjectMapping,
-} from '@teleporthq/teleport-project-generator-preact'
-import {
-  createStencilProjectGenerator,
-  StencilTemplate,
-  StencilProjectMapping,
-} from '@teleporthq/teleport-project-generator-stencil'
-import {
-  createReactNativeProjectGenerator,
-  ReactNativeTemplate,
-  ReactNativeProjectMapping,
-} from '@teleporthq/teleport-project-generator-reactnative'
-import {
-  createAngularProjectGenerator,
-  AngularTemplate,
-  AngularProjectMapping,
-} from '@teleporthq/teleport-project-generator-angular'
-import {
-  createGridsomeProjectGenerator,
-  GridsomeTemplate,
-} from '@teleporthq/teleport-project-generator-gridsome'
-import {
-  createGatsbyProjectGenerator,
-  GatsbyTemplate,
-} from '@teleporthq/teleport-project-generator-gatsby'
 
 import { createZipPublisher } from '@teleporthq/teleport-publisher-zip'
 import { createDiskPublisher } from '@teleporthq/teleport-publisher-disk'
-import { createVercelPublisher } from '@teleporthq/teleport-publisher-vercel'
-import { createNetlifyPublisher } from '@teleporthq/teleport-publisher-netlify'
 import { createGithubPublisher } from '@teleporthq/teleport-publisher-github'
 import { createCodesandboxPublisher } from '@teleporthq/teleport-publisher-codesandbox'
 
 import { createReactComponentGenerator } from '@teleporthq/teleport-component-generator-react'
-import { createPreactComponentGenerator } from '@teleporthq/teleport-component-generator-preact'
-import { createVueComponentGenerator } from '@teleporthq/teleport-component-generator-vue'
-import { createStencilComponentGenerator } from '@teleporthq/teleport-component-generator-stencil'
-import { createAngularComponentGenerator } from '@teleporthq/teleport-component-generator-angular'
-import { createReactNativeComponentGenerator } from '@teleporthq/teleport-component-generator-reactnative'
 
 const componentGeneratorFactories = {
   [ComponentType.REACT]: createReactComponentGenerator,
-  [ComponentType.PREACT]: createPreactComponentGenerator,
-  [ComponentType.ANGULAR]: createAngularComponentGenerator,
-  [ComponentType.VUE]: createVueComponentGenerator,
-  [ComponentType.STENCIL]: createStencilComponentGenerator,
-  [ComponentType.REACTNATIVE]: createReactNativeComponentGenerator,
 }
 
 const componentGeneratorProjectMappings = {
   [ComponentType.REACT]: ReactProjectMapping,
-  [ComponentType.PREACT]: PreactProjectMapping,
-  [ComponentType.ANGULAR]: AngularProjectMapping,
-  [ComponentType.VUE]: VueProjectMapping,
-  [ComponentType.STENCIL]: StencilProjectMapping,
-  [ComponentType.REACTNATIVE]: ReactNativeProjectMapping,
 }
 
 const projectGeneratorFactories = {
   [ProjectType.REACT]: createReactProjectGenerator,
-  [ProjectType.NEXT]: createNextProjectGenerator,
-  [ProjectType.VUE]: createVueProjectGenerator,
-  [ProjectType.NUXT]: createNuxtProjectGenerator,
-  [ProjectType.PREACT]: createPreactProjectGenerator,
-  [ProjectType.STENCIL]: createStencilProjectGenerator,
-  [ProjectType.ANGULAR]: createAngularProjectGenerator,
-  [ProjectType.REACTNATIVE]: createReactNativeProjectGenerator,
-  [ProjectType.GRIDSOME]: createGridsomeProjectGenerator,
-  [ProjectType.GATSBY]: createGatsbyProjectGenerator,
 }
 
 const templates = {
   [ProjectType.REACT]: ReactTemplate,
-  [ProjectType.NEXT]: NextTemplate,
-  [ProjectType.VUE]: VueTemplate,
-  [ProjectType.NUXT]: NuxtTemplate,
-  [ProjectType.PREACT]: PreactTemplate,
-  [ProjectType.STENCIL]: StencilTemplate,
-  [ProjectType.REACTNATIVE]: ReactNativeTemplate,
-  [ProjectType.ANGULAR]: AngularTemplate,
-  [ProjectType.GRIDSOME]: GridsomeTemplate,
-  [ProjectType.GATSBY]: GatsbyTemplate,
 }
 
 const projectPublisherFactories = {
   [PublisherType.ZIP]: createZipPublisher,
   [PublisherType.DISK]: createDiskPublisher,
-  [PublisherType.VERCEL]: createVercelPublisher,
-  [PublisherType.NETLIFY]: createNetlifyPublisher,
   [PublisherType.GITHUB]: createGithubPublisher,
   [PublisherType.CODESANDBOX]: createCodesandboxPublisher,
 }
@@ -136,10 +57,7 @@ export const packProject: PackProjectFunction = async (
   const packer = createProjectPacker()
 
   const projectGeneratorFactory = projectGeneratorFactories[projectType]
-  const projectTemplate =
-    projectType === ProjectType.PREACT && publisher === PublisherType.CODESANDBOX
-      ? PreactCodesandBoxTemplate
-      : templates[projectType]
+  const projectTemplate = templates[projectType]
 
   if (!projectGeneratorFactory) {
     throw new InvalidProjectTypeError(projectType)
@@ -182,6 +100,8 @@ export const generateComponent: GenerateComponentFunction = async (
 ) => {
   const generator = createComponentGenerator(componentType, styleVariation)
   const projectMapping = componentGeneratorProjectMappings[componentType]
+
+  // @ts-ignore
   generator.addMapping(projectMapping)
   return generator.generateComponent(componentUIDL, componentGeneratorOptions)
 }
@@ -193,11 +113,7 @@ const createComponentGenerator = (componentType: ComponentType, styleVariation: 
     throw new Error(`Invalid ComponentType: ${componentType}`)
   }
 
-  if (
-    componentType === ComponentType.REACT ||
-    componentType === ComponentType.PREACT ||
-    componentType === ComponentType.REACTNATIVE
-  ) {
+  if (componentType === ComponentType.REACT) {
     // @ts-ignore
     return generatorFactory(styleVariation)
   }

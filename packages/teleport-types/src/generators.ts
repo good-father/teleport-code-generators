@@ -388,41 +388,20 @@ export enum ReactNativeStyleVariation {
 export enum PublisherType {
   DISK = 'Disk',
   ZIP = 'Zip',
-  VERCEL = 'Vercel',
-  NETLIFY = 'Netlify',
   GITHUB = 'Github',
   CODESANDBOX = 'CodeSandbox',
 }
 
 export enum ProjectType {
   REACT = 'React',
-  NEXT = 'Next',
-  VUE = 'Vue',
-  NUXT = 'Nuxt',
-  PREACT = 'Preact',
-  STENCIL = 'Stencil',
-  ANGULAR = 'Angular',
-  GATSBY = 'Gatsby',
-  GRIDSOME = 'Gridsome',
-  REACTNATIVE = 'React-Native',
 }
 
 export enum ComponentType {
   REACT = 'React',
-  VUE = 'Vue',
-  PREACT = 'Preact',
-  STENCIL = 'Stencil',
-  ANGULAR = 'Angular',
-  REACTNATIVE = 'React-Native',
 }
 
 export const DefaultStyleVariation: Record<ComponentType, StyleVariation | null> = {
   [ComponentType.REACT]: ReactStyleVariation.CSSModules,
-  [ComponentType.PREACT]: PreactStyleVariation.CSSModules,
-  [ComponentType.REACTNATIVE]: ReactNativeStyleVariation.StyledComponents,
-  [ComponentType.VUE]: null,
-  [ComponentType.STENCIL]: null,
-  [ComponentType.ANGULAR]: null,
 }
 
 export type StyleVariation = ReactStyleVariation | PreactStyleVariation | ReactNativeStyleVariation

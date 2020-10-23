@@ -2,6 +2,7 @@ import * as types from '@babel/types'
 import ParsedASTNode from './parsed-ast'
 import { StringUtils } from '@teleporthq/teleport-shared'
 import { UIDLStateDefinition, UIDLPropDefinition } from '@teleporthq/teleport-types'
+
 /**
  * Adds a class definition string to an existing string of classes
  */
@@ -46,6 +47,19 @@ const getClassAttribute = (
   }
 
   return classNameAttribute as types.JSXAttribute
+}
+
+export const addSlotAttributesToJSXTag = (
+  jsxASTNode: types.JSXElement,
+  name: string,
+  value: string | types.JSXElement,
+  t = types
+) => {
+  const content =
+    typeof value === 'string'
+      ? t.stringLiteral(StringUtils.encode(value))
+      : t.jsxExpressionContainer(value)
+  jsxASTNode.openingElement.attributes.push(t.jsxAttribute(t.jsxIdentifier(name), content))
 }
 
 /**

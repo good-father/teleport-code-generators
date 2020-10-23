@@ -30,9 +30,9 @@ export const insertLinks = (
       child.content.node = insertLinks(child.content.node, options, linkInNode, node)
     }
 
-    if (child.type === 'slot' && child.content.fallback?.type === 'element') {
-      child.content.fallback = insertLinks(child.content.fallback, options, linkInNode, node)
-    }
+    // if (child.type === 'slot' && child.content.fallback?.type === 'element') {
+    //   child.content.fallback = insertLinks(child.content.fallback, options, linkInNode, node)
+    // }
 
     return child
   })

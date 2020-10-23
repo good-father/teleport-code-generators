@@ -13,7 +13,6 @@ export const GITHUB_REPOSITORY_BASE_URL = 'https://github.com'
 export const FILE_EXTENTIONS_TO_DECODE = [
   'json',
   'js',
-  'vue',
   'ts',
   'css',
   'html',

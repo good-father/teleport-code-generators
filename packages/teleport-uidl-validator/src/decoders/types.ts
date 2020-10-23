@@ -61,7 +61,6 @@ export type VUIDLNode =
   | VUIDLElementNode
   | VUIDLRepeatNode
   | VUIDLConditionalNode
-  | VUIDLSlotNode
   | string
 export interface VUIDLElement
   extends Modify<
@@ -120,12 +119,7 @@ export interface VUIDLSlotNode
   extends Modify<
     UIDLSlotNode,
     {
-      content:
-        | {
-            name?: string
-            fallback?: VUIDLElementNode | UIDLStaticValue | UIDLDynamicReference
-          }
-        | {}
+      content: VUIDLElementNode | UIDLStaticValue | UIDLDynamicReference
     }
   > {}
 

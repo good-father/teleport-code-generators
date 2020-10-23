@@ -130,15 +130,11 @@ export const dynamicNode = (referenceType: ReferenceType, id: string): UIDLDynam
 }
 
 export const slotNode = (
-  fallback?: UIDLElementNode | UIDLStaticValue | UIDLDynamicReference,
-  name?: string
+  content?: UIDLElementNode | UIDLStaticValue | UIDLDynamicReference
 ): UIDLSlotNode => {
   return {
     type: 'slot',
-    content: {
-      fallback,
-      name,
-    },
+    content,
   }
 }
 
