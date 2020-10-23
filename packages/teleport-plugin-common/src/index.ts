@@ -9,8 +9,6 @@ import ParsedASTNode from './utils/parsed-ast'
 
 export { ASTBuilders, StyleBuilders, HASTBuilders, ASTUtils, StyleUtils, HASTUtils, ParsedASTNode }
 
-export { default as createHTMLTemplateSyntax } from './node-handlers/node-to-html'
 export { default as createJSXSyntax } from './node-handlers/node-to-jsx'
 
-export * from './node-handlers/node-to-html/types'
 export * from './node-handlers/node-to-jsx/types'

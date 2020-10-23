@@ -195,7 +195,11 @@ export type UIDLNode =
   | UIDLImportReference
   | UIDLSlotNode
 
-export type UIDLAttributeValue = UIDLDynamicReference | UIDLStaticValue | UIDLImportReference
+export type UIDLAttributeValue =
+  | UIDLDynamicReference
+  | UIDLStaticValue
+  | UIDLImportReference
+  | UIDLSlotNode
 
 export type UIDLStyleValue = UIDLDynamicReference | UIDLStaticValue
 

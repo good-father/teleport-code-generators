@@ -154,7 +154,8 @@ const getProperAttributeValueAssignment = (value: string | unknown, t = types) =
   }
 
   if (typeof value === 'string') {
-    return t.stringLiteral(StringUtils.encode(value))
+    // return t.stringLiteral(StringUtils.encode(value))
+    return t.stringLiteral(value)
   }
 
   return t.jsxExpressionContainer(convertValueToLiteral(value))
