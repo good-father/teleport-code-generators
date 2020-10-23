@@ -134,7 +134,7 @@ const generateNode: NodeToJSX<UIDLNode, JSXASTReturnType> = (node, params, optio
         ? options.domHTMLInjection(node.content.toString())
         : node.content.toString()
     case 'static':
-      return StringUtils.encode(node.content.toString())
+      return node.content.toString()
 
     case 'dynamic':
       return createDynamicValueExpression(node, options)

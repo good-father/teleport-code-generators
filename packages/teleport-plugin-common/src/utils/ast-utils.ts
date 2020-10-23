@@ -56,9 +56,7 @@ export const addSlotAttributesToJSXTag = (
   t = types
 ) => {
   const content =
-    typeof value === 'string'
-      ? t.stringLiteral(StringUtils.encode(value))
-      : t.jsxExpressionContainer(value)
+    typeof value === 'string' ? t.stringLiteral(value) : t.jsxExpressionContainer(value)
   jsxASTNode.openingElement.attributes.push(t.jsxAttribute(t.jsxIdentifier(name), content))
 }
 
@@ -154,7 +152,6 @@ const getProperAttributeValueAssignment = (value: string | unknown, t = types) =
   }
 
   if (typeof value === 'string') {
-    // return t.stringLiteral(StringUtils.encode(value))
     return t.stringLiteral(value)
   }
 

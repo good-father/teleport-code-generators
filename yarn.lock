@@ -115,7 +115,7 @@
     globals "^11.1.0"
     lodash "^4.17.13"
 
-"@babel/types@^7.0.0", "@babel/types@^7.3.0", "@babel/types@^7.3.3", "@babel/types@^7.4.0", "@babel/types@^7.5.5", "@babel/types@^7.8.3":
+"@babel/types@^7.0.0", "@babel/types@^7.3.0", "@babel/types@^7.4.0", "@babel/types@^7.5.5", "@babel/types@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.8.3.tgz#5a383dffa5416db1b73dedffd311ffd0788fb31c"
   dependencies:
@@ -1116,209 +1116,342 @@
     unist-util-is "^2.1.3"
     xtend "^4.0.1"
 
-"@starptech/prettyhtml-hast-to-html@^0.8.17":
-  version "0.8.17"
-  resolved "https://registry.yarnpkg.com/@starptech/prettyhtml-hast-to-html/-/prettyhtml-hast-to-html-0.8.17.tgz#f5bc500d2b03fed3c275d97bdfe4207b22fded39"
+"@teleporthq/teleport-component-generator-angular@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-component-generator-angular/download/@teleporthq/teleport-component-generator-angular-0.13.3.tgz#97128098bc4773318317563357d35a221d21eb19"
+  integrity sha1-lxKAmLxHczGDF1YzV9NaIh0h6xk=
   dependencies:
-    ccount "^1.0.3"
-    comma-separated-tokens "^1.0.5"
-    hast-util-is-element "^1.0.1"
-    hast-util-whitespace "^1.0.1"
-    html-void-elements "^1.0.3"
-    html-whitespace-sensitive-tag-names "^1.0.0"
-    property-information "^5.0.1"
-    repeat-string "^1.6.1"
-    space-separated-tokens "^1.1.2"
-    stringify-entities "^1.3.2"
-    unist-util-is "^2.1.2"
-    xtend "^4.0.1"
+    "@teleporthq/teleport-component-generator" "^0.13.3"
+    "@teleporthq/teleport-plugin-angular-base-component" "^0.13.3"
+    "@teleporthq/teleport-plugin-css" "^0.13.3"
+    "@teleporthq/teleport-plugin-import-statements" "^0.13.3"
+    "@teleporthq/teleport-postprocessor-prettier-html" "^0.13.3"
+    "@teleporthq/teleport-postprocessor-prettier-ts" "^0.13.3"
+    "@teleporthq/teleport-shared" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
 
-"@stencil/core@^1.3.0":
-  version "1.8.7"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-1.8.7.tgz#8e5d8f8b0eb71a00e5ba38e57fd777fdd4a82df8"
+"@teleporthq/teleport-component-generator-preact@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-component-generator-preact/download/@teleporthq/teleport-component-generator-preact-0.13.3.tgz#51aae0d32199b802c0104e543e5a04566d71a049"
+  integrity sha1-Uarg0yGZuALAEE5UPloEVm1xoEk=
   dependencies:
-    typescript "3.7.5"
+    "@teleporthq/teleport-component-generator" "^0.13.3"
+    "@teleporthq/teleport-plugin-css" "^0.13.3"
+    "@teleporthq/teleport-plugin-css-modules" "^0.13.3"
+    "@teleporthq/teleport-plugin-import-statements" "^0.13.3"
+    "@teleporthq/teleport-plugin-jsx-inline-styles" "^0.13.3"
+    "@teleporthq/teleport-plugin-jsx-proptypes" "^0.13.3"
+    "@teleporthq/teleport-plugin-preact-base-component" "^0.13.3"
+    "@teleporthq/teleport-postprocessor-prettier-js" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
 
-"@teleporthq/teleport-component-generator-react@^0.7.0":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@teleporthq/teleport-component-generator-react/-/teleport-component-generator-react-0.7.1.tgz#c584a86ab88c28e1c0d8fe37ec07d8326ed2675e"
+"@teleporthq/teleport-component-generator-reactnative@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-component-generator-reactnative/download/@teleporthq/teleport-component-generator-reactnative-0.13.3.tgz#82043fa97d6142718fac81382fbc4bf7555659da"
+  integrity sha1-ggQ/qX1hQnGPrIE4L7xL91VWWdo=
   dependencies:
-    "@teleporthq/teleport-component-generator" "^0.7.0"
-    "@teleporthq/teleport-plugin-import-statements" "^0.7.0"
-    "@teleporthq/teleport-plugin-react-app-routing" "^0.7.0"
-    "@teleporthq/teleport-plugin-react-base-component" "^0.7.1"
-    "@teleporthq/teleport-plugin-react-css-modules" "^0.7.0"
-    "@teleporthq/teleport-plugin-react-inline-styles" "^0.7.0"
-    "@teleporthq/teleport-plugin-react-jss" "^0.7.0"
-    "@teleporthq/teleport-plugin-react-proptypes" "^0.7.0"
-    "@teleporthq/teleport-plugin-react-styled-components" "^0.7.0"
-    "@teleporthq/teleport-plugin-react-styled-jsx" "^0.7.0"
-    "@teleporthq/teleport-postprocessor-prettier-js" "^0.7.0"
-    "@teleporthq/teleport-shared" "^0.7.0"
-    "@teleporthq/teleport-types" "^0.7.0"
+    "@teleporthq/teleport-component-generator" "^0.13.3"
+    "@teleporthq/teleport-plugin-import-statements" "^0.13.3"
+    "@teleporthq/teleport-plugin-jsx-inline-styles" "^0.13.3"
+    "@teleporthq/teleport-plugin-jsx-proptypes" "^0.13.3"
+    "@teleporthq/teleport-plugin-react-base-component" "^0.13.3"
+    "@teleporthq/teleport-plugin-react-styled-components" "^0.13.3"
+    "@teleporthq/teleport-plugin-reactnative-component-navigation" "^0.13.3"
+    "@teleporthq/teleport-plugin-reactnative-resource-loader" "^0.13.3"
+    "@teleporthq/teleport-postprocessor-prettier-jsx" "^0.13.3"
+    "@teleporthq/teleport-shared" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
 
-"@teleporthq/teleport-component-generator-vue@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@teleporthq/teleport-component-generator-vue/-/teleport-component-generator-vue-0.7.0.tgz#982e74c7378a300700d0876711814004f86790eb"
+"@teleporthq/teleport-component-generator-stencil@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-component-generator-stencil/download/@teleporthq/teleport-component-generator-stencil-0.13.3.tgz#f05d3a345147d85df4ce3095b923dfd003185766"
+  integrity sha1-8F06NFFH2F30zjCVuSPf0AMYV2Y=
   dependencies:
-    "@teleporthq/teleport-component-generator" "^0.7.0"
-    "@teleporthq/teleport-plugin-import-statements" "^0.7.0"
-    "@teleporthq/teleport-plugin-vue-app-routing" "^0.7.0"
-    "@teleporthq/teleport-plugin-vue-base-component" "^0.7.0"
-    "@teleporthq/teleport-plugin-vue-css" "^0.7.0"
-    "@teleporthq/teleport-postprocessor-prettier-html" "^0.7.0"
-    "@teleporthq/teleport-postprocessor-prettier-js" "^0.7.0"
-    "@teleporthq/teleport-postprocessor-vue-file" "^0.7.0"
-    "@teleporthq/teleport-shared" "^0.7.0"
-    "@teleporthq/teleport-types" "^0.7.0"
+    "@teleporthq/teleport-component-generator" "^0.13.3"
+    "@teleporthq/teleport-plugin-css" "^0.13.3"
+    "@teleporthq/teleport-plugin-import-statements" "^0.13.3"
+    "@teleporthq/teleport-plugin-stencil-base-component" "^0.13.3"
+    "@teleporthq/teleport-postprocessor-prettier-js" "^0.13.3"
+    "@teleporthq/teleport-shared" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
 
-"@teleporthq/teleport-component-generator@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@teleporthq/teleport-component-generator/-/teleport-component-generator-0.7.0.tgz#e248666a4b2796d936acf943745ed5750c4ce197"
+"@teleporthq/teleport-component-generator-vue@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-component-generator-vue/download/@teleporthq/teleport-component-generator-vue-0.13.3.tgz#168612a5b657ce0f614d374bdd01e7aba8c79cfd"
+  integrity sha1-FoYSpbZXzg9hTTdL3QHnq6jHnP0=
   dependencies:
-    "@babel/generator" "^7.4.0"
-    "@babel/types" "^7.3.3"
-    "@starptech/prettyhtml-hast-to-html" "^0.8.17"
-    "@teleporthq/teleport-shared" "^0.7.0"
-    "@teleporthq/teleport-types" "^0.7.0"
-    "@teleporthq/teleport-uidl-validator" "^0.7.0"
+    "@teleporthq/teleport-component-generator" "^0.13.3"
+    "@teleporthq/teleport-plugin-css" "^0.13.3"
+    "@teleporthq/teleport-plugin-import-statements" "^0.13.3"
+    "@teleporthq/teleport-plugin-vue-app-routing" "^0.13.3"
+    "@teleporthq/teleport-plugin-vue-base-component" "^0.13.3"
+    "@teleporthq/teleport-postprocessor-prettier-html" "^0.13.3"
+    "@teleporthq/teleport-postprocessor-prettier-js" "^0.13.3"
+    "@teleporthq/teleport-postprocessor-vue-file" "^0.13.3"
+    "@teleporthq/teleport-shared" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
 
-"@teleporthq/teleport-plugin-import-statements@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@teleporthq/teleport-plugin-import-statements/-/teleport-plugin-import-statements-0.7.0.tgz#8890890beef034792188af1c971cec2593fb986c"
+"@teleporthq/teleport-plugin-angular-base-component@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-plugin-angular-base-component/download/@teleporthq/teleport-plugin-angular-base-component-0.13.3.tgz#95dd207281f5fce6ceb6e696fdfbaa0d2faa4046"
+  integrity sha1-ld0gcoH1/ObOtuaW/fuqDS+qQEY=
   dependencies:
-    "@teleporthq/teleport-shared" "^0.7.0"
-    "@teleporthq/teleport-types" "^0.7.0"
+    "@babel/types" "^7.5.5"
+    "@teleporthq/teleport-plugin-common" "^0.13.3"
+    "@teleporthq/teleport-shared" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
 
-"@teleporthq/teleport-plugin-react-app-routing@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@teleporthq/teleport-plugin-react-app-routing/-/teleport-plugin-react-app-routing-0.7.0.tgz#3cd358c11a1edf7e5baa9683d588b39d6dbb98dd"
+"@teleporthq/teleport-plugin-angular-module@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-plugin-angular-module/download/@teleporthq/teleport-plugin-angular-module-0.13.3.tgz#7e622597d6a458aa14fffc32d420c9bea78247f7"
+  integrity sha1-fmIll9akWKoU//wy1CDJvqeCR/c=
   dependencies:
-    "@babel/types" "^7.3.3"
-    "@teleporthq/teleport-shared" "^0.7.0"
-    "@teleporthq/teleport-types" "^0.7.0"
+    "@babel/types" "^7.5.5"
+    "@teleporthq/teleport-shared" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
 
-"@teleporthq/teleport-plugin-react-base-component@^0.7.1":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@teleporthq/teleport-plugin-react-base-component/-/teleport-plugin-react-base-component-0.7.1.tgz#3e60c03c255c92648498c3f1a39eea011a172530"
+"@teleporthq/teleport-plugin-preact-base-component@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-plugin-preact-base-component/download/@teleporthq/teleport-plugin-preact-base-component-0.13.3.tgz#e071d63edc92313df47aa1210dabdba59f2ed3f3"
+  integrity sha1-4HHWPtySMT30eqEhDavbpZ8u0/M=
   dependencies:
-    "@babel/types" "^7.3.3"
-    "@teleporthq/teleport-shared" "^0.7.0"
-    "@teleporthq/teleport-types" "^0.7.0"
+    "@babel/types" "^7.5.5"
+    "@teleporthq/teleport-plugin-common" "^0.13.3"
+    "@teleporthq/teleport-shared" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
 
-"@teleporthq/teleport-plugin-react-css-modules@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@teleporthq/teleport-plugin-react-css-modules/-/teleport-plugin-react-css-modules-0.7.0.tgz#b7e9d85dad4e569d54e061b514ec022f425d0b0d"
+"@teleporthq/teleport-plugin-reactnative-app-routing@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-plugin-reactnative-app-routing/download/@teleporthq/teleport-plugin-reactnative-app-routing-0.13.3.tgz#7babd09f1802fb242fd3b2897cce561b86394250"
+  integrity sha1-e6vQnxgC+yQv07KJfM5WG4Y5QlA=
   dependencies:
-    "@babel/types" "^7.3.3"
-    "@teleporthq/teleport-shared" "^0.7.0"
-    "@teleporthq/teleport-types" "^0.7.0"
+    "@babel/types" "^7.5.5"
+    "@teleporthq/teleport-plugin-common" "^0.13.3"
+    "@teleporthq/teleport-shared" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
 
-"@teleporthq/teleport-plugin-react-inline-styles@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@teleporthq/teleport-plugin-react-inline-styles/-/teleport-plugin-react-inline-styles-0.7.0.tgz#186b7362aedb9bcd47fabe574a0a44a9bbfe986e"
+"@teleporthq/teleport-plugin-reactnative-component-navigation@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-plugin-reactnative-component-navigation/download/@teleporthq/teleport-plugin-reactnative-component-navigation-0.13.3.tgz#da874e5d9f8d63817a1a954d9bdf6a0724622668"
+  integrity sha1-2odOXZ+NY4F6GpVNm99qByRiJmg=
   dependencies:
-    "@babel/types" "^7.3.3"
-    "@teleporthq/teleport-shared" "^0.7.0"
-    "@teleporthq/teleport-types" "^0.7.0"
+    "@babel/types" "^7.5.5"
+    "@teleporthq/teleport-plugin-common" "^0.13.3"
+    "@teleporthq/teleport-shared" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
 
-"@teleporthq/teleport-plugin-react-jss@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@teleporthq/teleport-plugin-react-jss/-/teleport-plugin-react-jss-0.7.0.tgz#ddf162dc0fa8148eebb2cb0d317e54ba2747f1e5"
+"@teleporthq/teleport-plugin-reactnative-resource-loader@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-plugin-reactnative-resource-loader/download/@teleporthq/teleport-plugin-reactnative-resource-loader-0.13.3.tgz#6da9dfd218683894f1780918cc0e9f94923a8242"
+  integrity sha1-banf0hhoOJTxeAkYzA6flJI6gkI=
   dependencies:
-    "@babel/types" "^7.3.3"
-    "@teleporthq/teleport-shared" "^0.7.0"
-    "@teleporthq/teleport-types" "^0.7.0"
+    "@babel/types" "^7.5.5"
+    "@teleporthq/teleport-shared" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
 
-"@teleporthq/teleport-plugin-react-proptypes@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@teleporthq/teleport-plugin-react-proptypes/-/teleport-plugin-react-proptypes-0.7.0.tgz#8eb8d543d4d59597a40500cf981a90bbb2834fb3"
+"@teleporthq/teleport-plugin-stencil-app-routing@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-plugin-stencil-app-routing/download/@teleporthq/teleport-plugin-stencil-app-routing-0.13.3.tgz#be49c92dcd3e9ccbee620d92d77022c0031e44c6"
+  integrity sha1-vknJLc0+nMvuYg2S13AiwAMeRMY=
   dependencies:
-    "@babel/types" "^7.3.3"
-    "@teleporthq/teleport-shared" "^0.7.0"
-    "@teleporthq/teleport-types" "^0.7.0"
+    "@babel/types" "^7.5.5"
+    "@teleporthq/teleport-plugin-common" "^0.13.3"
+    "@teleporthq/teleport-shared" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
 
-"@teleporthq/teleport-plugin-react-styled-components@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@teleporthq/teleport-plugin-react-styled-components/-/teleport-plugin-react-styled-components-0.7.0.tgz#ac7380175e99f281f2565cac6361a10d1310fd13"
+"@teleporthq/teleport-plugin-stencil-base-component@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-plugin-stencil-base-component/download/@teleporthq/teleport-plugin-stencil-base-component-0.13.3.tgz#77f8ecdf6f1888aa600dffa7fbb3fb47914d4e4d"
+  integrity sha1-d/js328YiKpgDf+n+7P7R5FNTk0=
   dependencies:
-    "@babel/types" "^7.3.3"
-    "@teleporthq/teleport-shared" "^0.7.0"
-    "@teleporthq/teleport-types" "^0.7.0"
+    "@babel/types" "^7.5.5"
+    "@teleporthq/teleport-plugin-common" "^0.13.3"
+    "@teleporthq/teleport-shared" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
 
-"@teleporthq/teleport-plugin-react-styled-jsx@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@teleporthq/teleport-plugin-react-styled-jsx/-/teleport-plugin-react-styled-jsx-0.7.0.tgz#a381ffd467666d39b3565cc03bc98211fba7d784"
+"@teleporthq/teleport-plugin-vue-app-routing@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-plugin-vue-app-routing/download/@teleporthq/teleport-plugin-vue-app-routing-0.13.3.tgz#fb283e2c3cbb9fa6fd3262b5e9a4e34ecdcb3b30"
+  integrity sha1-+yg+LDy7n6b9MmK16aTjTs3LOzA=
   dependencies:
-    "@teleporthq/teleport-shared" "^0.7.0"
-    "@teleporthq/teleport-types" "^0.7.0"
+    "@babel/types" "^7.5.5"
+    "@teleporthq/teleport-shared" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
 
-"@teleporthq/teleport-plugin-vue-app-routing@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@teleporthq/teleport-plugin-vue-app-routing/-/teleport-plugin-vue-app-routing-0.7.0.tgz#967c5f58caed275fbecd0d11c9445ddc7c56cd02"
+"@teleporthq/teleport-plugin-vue-base-component@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-plugin-vue-base-component/download/@teleporthq/teleport-plugin-vue-base-component-0.13.3.tgz#e70a1ba35f21b8f5d1a20ceaf2fe77d23ec3475b"
+  integrity sha1-5wobo18huPXRogzq8v530j7DR1s=
   dependencies:
-    "@babel/types" "^7.3.3"
-    "@teleporthq/teleport-shared" "^0.7.0"
-    "@teleporthq/teleport-types" "^0.7.0"
+    "@babel/types" "^7.5.5"
+    "@teleporthq/teleport-plugin-common" "^0.13.3"
+    "@teleporthq/teleport-shared" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
 
-"@teleporthq/teleport-plugin-vue-base-component@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@teleporthq/teleport-plugin-vue-base-component/-/teleport-plugin-vue-base-component-0.7.0.tgz#122146558cbb7443690d84c33f897818d6458456"
+"@teleporthq/teleport-plugin-vue-head-config@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-plugin-vue-head-config/download/@teleporthq/teleport-plugin-vue-head-config-0.13.3.tgz#86ef88829f18ab28ea2cf36c3aa266231f5c6ece"
+  integrity sha1-hu+Igp8YqyjqLPNsOqJmIx9cbs4=
   dependencies:
-    "@babel/types" "^7.3.3"
-    "@teleporthq/teleport-shared" "^0.7.0"
-    "@teleporthq/teleport-types" "^0.7.0"
+    "@babel/types" "^7.5.5"
+    "@teleporthq/teleport-plugin-common" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
 
-"@teleporthq/teleport-plugin-vue-css@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@teleporthq/teleport-plugin-vue-css/-/teleport-plugin-vue-css-0.7.0.tgz#70a673f6f0ed7273dc5a82755c73b060d82e37b9"
+"@teleporthq/teleport-postprocessor-vue-file@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-postprocessor-vue-file/download/@teleporthq/teleport-postprocessor-vue-file-0.13.3.tgz#5af12b5004b09a9dc357a0c7dc45699c67c97b09"
+  integrity sha1-WvErUASwmp3DV6DH3EVpnGfJewk=
   dependencies:
-    "@teleporthq/teleport-shared" "^0.7.0"
-    "@teleporthq/teleport-types" "^0.7.0"
+    "@teleporthq/teleport-shared" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
 
-"@teleporthq/teleport-postprocessor-prettier-html@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@teleporthq/teleport-postprocessor-prettier-html/-/teleport-postprocessor-prettier-html-0.7.0.tgz#b3a8b49c347e492b5cae9ed6131ff228f69426f7"
+"@teleporthq/teleport-project-generator-angular@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-project-generator-angular/download/@teleporthq/teleport-project-generator-angular-0.13.3.tgz#bccd8980f64d9466fe8213060409dc30cdb20a3d"
+  integrity sha1-vM2JgPZNlGb+ghMGBAncMM2yCj0=
   dependencies:
-    "@teleporthq/teleport-shared" "^0.7.0"
-    "@teleporthq/teleport-types" "^0.7.0"
-    prettier "^1.17.0"
+    "@teleporthq/teleport-component-generator" "^0.13.3"
+    "@teleporthq/teleport-component-generator-angular" "^0.13.3"
+    "@teleporthq/teleport-plugin-angular-module" "^0.13.3"
+    "@teleporthq/teleport-plugin-css" "^0.13.3"
+    "@teleporthq/teleport-plugin-import-statements" "^0.13.3"
+    "@teleporthq/teleport-postprocessor-prettier-html" "^0.13.3"
+    "@teleporthq/teleport-postprocessor-prettier-ts" "^0.13.3"
+    "@teleporthq/teleport-project-generator" "^0.13.3"
+    "@teleporthq/teleport-shared" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
 
-"@teleporthq/teleport-postprocessor-prettier-js@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@teleporthq/teleport-postprocessor-prettier-js/-/teleport-postprocessor-prettier-js-0.7.0.tgz#8a31b7fd4f7bfe7835066cbe90698fb85f07172c"
+"@teleporthq/teleport-project-generator-gatsby@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-project-generator-gatsby/download/@teleporthq/teleport-project-generator-gatsby-0.13.3.tgz#3b019de3e36ac149acbc175f3cb8c17393da32ab"
+  integrity sha1-OwGd4+NqwUmsvBdfPLjBc5PaMqs=
   dependencies:
-    "@teleporthq/teleport-shared" "^0.7.0"
-    "@teleporthq/teleport-types" "^0.7.0"
-    prettier "^1.17.0"
+    "@babel/types" "^7.5.5"
+    "@teleporthq/teleport-component-generator" "^0.13.3"
+    "@teleporthq/teleport-plugin-common" "^0.13.3"
+    "@teleporthq/teleport-plugin-css-modules" "^0.13.3"
+    "@teleporthq/teleport-plugin-import-statements" "^0.13.3"
+    "@teleporthq/teleport-plugin-jsx-head-config" "^0.13.3"
+    "@teleporthq/teleport-plugin-jsx-proptypes" "^0.13.3"
+    "@teleporthq/teleport-plugin-react-app-routing" "^0.13.3"
+    "@teleporthq/teleport-plugin-react-base-component" "^0.13.3"
+    "@teleporthq/teleport-plugin-react-styled-components" "^0.13.3"
+    "@teleporthq/teleport-postprocessor-prettier-html" "^0.13.3"
+    "@teleporthq/teleport-postprocessor-prettier-js" "^0.13.3"
+    "@teleporthq/teleport-postprocessor-prettier-jsx" "^0.13.3"
+    "@teleporthq/teleport-project-generator" "^0.13.3"
+    "@teleporthq/teleport-shared" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
+    "@teleporthq/teleport-uidl-validator" "^0.13.3"
+    magic-string "^0.25.4"
 
-"@teleporthq/teleport-postprocessor-vue-file@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@teleporthq/teleport-postprocessor-vue-file/-/teleport-postprocessor-vue-file-0.7.0.tgz#8845bbe4123378259173f267783ea2f2524077a4"
+"@teleporthq/teleport-project-generator-gridsome@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-project-generator-gridsome/download/@teleporthq/teleport-project-generator-gridsome-0.13.3.tgz#d6eb0cc99acc5c48f34066edd9f3a454502ecd62"
+  integrity sha1-1usMyZrMXEjzQGbt2fOkVFAuzWI=
   dependencies:
-    "@teleporthq/teleport-shared" "^0.7.0"
-    "@teleporthq/teleport-types" "^0.7.0"
+    "@babel/types" "^7.5.5"
+    "@teleporthq/teleport-component-generator" "^0.13.3"
+    "@teleporthq/teleport-component-generator-vue" "^0.13.3"
+    "@teleporthq/teleport-plugin-vue-head-config" "^0.13.3"
+    "@teleporthq/teleport-postprocessor-prettier-html" "^0.13.3"
+    "@teleporthq/teleport-postprocessor-prettier-js" "^0.13.3"
+    "@teleporthq/teleport-project-generator" "^0.13.3"
+    "@teleporthq/teleport-shared" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
 
-"@teleporthq/teleport-shared@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@teleporthq/teleport-shared/-/teleport-shared-0.7.0.tgz#a778e7883b202cb7ef591a0b9184c9f206dcf222"
+"@teleporthq/teleport-project-generator-next@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-project-generator-next/download/@teleporthq/teleport-project-generator-next-0.13.3.tgz#ed03dcf2462c6a67319062d952252fa5db2dc274"
+  integrity sha1-7QPc8kYsamcxkGLZUiUvpdstwnQ=
   dependencies:
-    "@babel/types" "^7.3.3"
-    "@teleporthq/teleport-types" "^0.7.0"
-    jss "^9.8.7"
-    jss-preset-default "^4.5.0"
+    "@babel/types" "^7.5.5"
+    "@teleporthq/teleport-component-generator" "^0.13.3"
+    "@teleporthq/teleport-component-generator-react" "^0.13.3"
+    "@teleporthq/teleport-plugin-common" "^0.13.3"
+    "@teleporthq/teleport-plugin-css" "^0.13.3"
+    "@teleporthq/teleport-plugin-jsx-head-config" "^0.13.3"
+    "@teleporthq/teleport-postprocessor-prettier-js" "^0.13.3"
+    "@teleporthq/teleport-project-generator" "^0.13.3"
+    "@teleporthq/teleport-shared" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
 
-"@teleporthq/teleport-types@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@teleporthq/teleport-types/-/teleport-types-0.7.0.tgz#872c46d6fbfafc4d187e563e7a90a371222c1f90"
-
-"@teleporthq/teleport-uidl-validator@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@teleporthq/teleport-uidl-validator/-/teleport-uidl-validator-0.7.0.tgz#1d2a65614d966ade67b6a8d0e6fcf5c5abddbe0c"
+"@teleporthq/teleport-project-generator-nuxt@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-project-generator-nuxt/download/@teleporthq/teleport-project-generator-nuxt-0.13.3.tgz#9be852a8fd389ad514cc301eaf3ebdec34669e68"
+  integrity sha1-m+hSqP04mtUUzDAerz697DRmnmg=
   dependencies:
-    "@teleporthq/teleport-shared" "^0.7.0"
-    "@teleporthq/teleport-types" "^0.7.0"
-    ajv "^6.10.0"
+    "@teleporthq/teleport-component-generator" "^0.13.3"
+    "@teleporthq/teleport-component-generator-vue" "^0.13.3"
+    "@teleporthq/teleport-plugin-css" "^0.13.3"
+    "@teleporthq/teleport-plugin-vue-head-config" "^0.13.3"
+    "@teleporthq/teleport-postprocessor-prettier-html" "^0.13.3"
+    "@teleporthq/teleport-project-generator" "^0.13.3"
+    "@teleporthq/teleport-shared" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
+
+"@teleporthq/teleport-project-generator-preact@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-project-generator-preact/download/@teleporthq/teleport-project-generator-preact-0.13.3.tgz#cf2da87ac447e09ca3c0a44f86f972ade3b18519"
+  integrity sha1-zy2oesRH4JyjwKRPhvlyreOxhRk=
+  dependencies:
+    "@teleporthq/teleport-component-generator" "^0.13.3"
+    "@teleporthq/teleport-component-generator-preact" "^0.13.3"
+    "@teleporthq/teleport-plugin-css-modules" "^0.13.3"
+    "@teleporthq/teleport-plugin-import-statements" "^0.13.3"
+    "@teleporthq/teleport-plugin-jsx-head-config" "^0.13.3"
+    "@teleporthq/teleport-plugin-react-app-routing" "^0.13.3"
+    "@teleporthq/teleport-postprocessor-prettier-js" "^0.13.3"
+    "@teleporthq/teleport-project-generator" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
+
+"@teleporthq/teleport-project-generator-reactnative@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-project-generator-reactnative/download/@teleporthq/teleport-project-generator-reactnative-0.13.3.tgz#289e9c889d243364dd41826b5b99f177b585f008"
+  integrity sha1-KJ6ciJ0kM2TdQYJrW5nxd7WF8Ag=
+  dependencies:
+    "@teleporthq/teleport-component-generator" "^0.13.3"
+    "@teleporthq/teleport-component-generator-reactnative" "^0.13.3"
+    "@teleporthq/teleport-plugin-import-statements" "^0.13.3"
+    "@teleporthq/teleport-plugin-reactnative-app-routing" "^0.13.3"
+    "@teleporthq/teleport-postprocessor-prettier-jsx" "^0.13.3"
+    "@teleporthq/teleport-project-generator" "^0.13.3"
+    "@teleporthq/teleport-shared" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
+
+"@teleporthq/teleport-project-generator-stencil@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-project-generator-stencil/download/@teleporthq/teleport-project-generator-stencil-0.13.3.tgz#75a904a38f927b919b1fc0ebfd069e114e409506"
+  integrity sha1-dakEo4+Se5GbH8Dr/QaeEU5AlQY=
+  dependencies:
+    "@teleporthq/teleport-component-generator" "^0.13.3"
+    "@teleporthq/teleport-component-generator-stencil" "^0.13.3"
+    "@teleporthq/teleport-plugin-css" "^0.13.3"
+    "@teleporthq/teleport-plugin-import-statements" "^0.13.3"
+    "@teleporthq/teleport-plugin-stencil-app-routing" "^0.13.3"
+    "@teleporthq/teleport-postprocessor-prettier-html" "^0.13.3"
+    "@teleporthq/teleport-postprocessor-prettier-js" "^0.13.3"
+    "@teleporthq/teleport-project-generator" "^0.13.3"
+    "@teleporthq/teleport-shared" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
+    magic-string "^0.25.4"
+
+"@teleporthq/teleport-project-generator-vue@^0.13.3":
+  version "0.13.3"
+  resolved "http://artifactory.intra.ke.com/artifactory/api/npm/npm-virtual/@teleporthq/teleport-project-generator-vue/download/@teleporthq/teleport-project-generator-vue-0.13.3.tgz#e4d141784b8ef397ae789f81ccd2eecfa4d43f55"
+  integrity sha1-5NFBeEuO85eueJ+BzNLuz6TUP1U=
+  dependencies:
+    "@teleporthq/teleport-component-generator" "^0.13.3"
+    "@teleporthq/teleport-component-generator-vue" "^0.13.3"
+    "@teleporthq/teleport-plugin-css" "^0.13.3"
+    "@teleporthq/teleport-plugin-import-statements" "^0.13.3"
+    "@teleporthq/teleport-plugin-vue-app-routing" "^0.13.3"
+    "@teleporthq/teleport-plugin-vue-head-config" "^0.13.3"
+    "@teleporthq/teleport-postprocessor-prettier-html" "^0.13.3"
+    "@teleporthq/teleport-postprocessor-prettier-js" "^0.13.3"
+    "@teleporthq/teleport-project-generator" "^0.13.3"
+    "@teleporthq/teleport-shared" "^0.13.3"
+    "@teleporthq/teleport-types" "^0.13.3"
 
 "@types/babel-types@^7.0.7":
   version "7.0.7"
@@ -1421,10 +1554,6 @@
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.0.0.tgz#dc85454b953178cc6043df5208b9e949b54a3bc4"
   integrity sha512-/rM+sWiuOZ5dvuVzV37sUuklsbg+JPOP8d+nNFlo2ZtfpzPiPvh1/gc8liWOLBqe+sR+ZM7guPaIcTt6UZTo7Q==
-
-"@types/prismjs@^1.9.1":
-  version "1.16.0"
-  resolved "https://registry.yarnpkg.com/@types/prismjs/-/prismjs-1.16.0.tgz#4328c9f65698e59f4feade8f4e5d928c748fd643"
 
 "@types/rimraf@^2.0.3":
   version "2.0.3"
@@ -1612,12 +1741,6 @@ abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
 
-abstract-leveldown@~0.12.0, abstract-leveldown@~0.12.1:
-  version "0.12.4"
-  resolved "https://registry.yarnpkg.com/abstract-leveldown/-/abstract-leveldown-0.12.4.tgz#29e18e632e60e4e221d5810247852a63d7b2e410"
-  dependencies:
-    xtend "~3.0.0"
-
 accepts@~1.3.7:
   version "1.3.7"
   resolved "https://registry.yarnpkg.com/accepts/-/accepts-1.3.7.tgz#531bc726517a3b2b41f850021c6cc15eaab507cd"
@@ -1636,7 +1759,7 @@ acorn-walk@^6.0.1, acorn-walk@^6.1.1:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/acorn-walk/-/acorn-walk-6.2.0.tgz#123cb8f3b84c2171f1f7fb252615b1c78a6b1a8c"
 
-acorn@^5.5.3, acorn@^5.7.3:
+acorn@^5.5.3:
   version "5.7.4"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.4.tgz#3e8d8a9947d0599a1796d10225d7432f4a4acf5e"
 
@@ -1676,7 +1799,7 @@ ajv-keywords@^3.1.0, ajv-keywords@^3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/ajv-keywords/-/ajv-keywords-3.4.1.tgz#ef916e271c64ac12171fd8384eaae6b2345854da"
 
-ajv@^6.1.0, ajv@^6.10.0, ajv@^6.10.2, ajv@^6.5.5:
+ajv@^6.1.0, ajv@^6.10.2, ajv@^6.5.5:
   version "6.11.0"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.11.0.tgz#c3607cbc8ae392d8a5a536f25b21f8e5f3f87fe9"
   dependencies:
@@ -2015,12 +2138,6 @@ bindings@^1.5.0:
   dependencies:
     file-uri-to-path "1.0.0"
 
-bl@~0.8.1:
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/bl/-/bl-0.8.2.tgz#c9b6bca08d1bc2ea00fc8afb4f1a5fd1e1c66e4e"
-  dependencies:
-    readable-stream "~1.0.26"
-
 bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.5:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
@@ -2116,14 +2233,6 @@ browserify-des@^1.0.0:
     inherits "^2.0.1"
     safe-buffer "^5.1.2"
 
-browserify-fs@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/browserify-fs/-/browserify-fs-1.0.0.tgz#f075aa8a729d4d1716d066620e386fcc1311a96f"
-  dependencies:
-    level-filesystem "^1.0.1"
-    level-js "^2.1.3"
-    levelup "^0.18.2"
-
 browserify-rsa@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/browserify-rsa/-/browserify-rsa-4.0.1.tgz#21e0abfaf6f2029cf2fafb133567a701d4135524"
@@ -2164,10 +2273,6 @@ bser@2.1.1:
 btoa-lite@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/btoa-lite/-/btoa-lite-1.0.0.tgz#337766da15801210fdd956c22e9c6891ab9d0337"
-
-buffer-es6@^4.9.2, buffer-es6@^4.9.3:
-  version "4.9.3"
-  resolved "https://registry.yarnpkg.com/buffer-es6/-/buffer-es6-4.9.3.tgz#f26347b82df76fd37e18bcb5288c4970cfd5c404"
 
 buffer-from@1.x, buffer-from@^1.0.0:
   version "1.1.1"
@@ -2308,7 +2413,7 @@ caseless@~0.12.0:
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
 
-ccount@^1.0.3, ccount@^1.0.4:
+ccount@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/ccount/-/ccount-1.0.5.tgz#ac82a944905a65ce204eb03023157edf29425c17"
 
@@ -2425,14 +2530,6 @@ cli-width@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-2.2.0.tgz#ff19ede8a9a5e579324147b0c11f0fbcbabed639"
 
-clipboard@^2.0.0:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/clipboard/-/clipboard-2.0.4.tgz#836dafd66cf0fea5d71ce5d5b0bf6e958009112d"
-  dependencies:
-    good-listener "^1.2.2"
-    select "^1.1.2"
-    tiny-emitter "^2.0.0"
-
 cliui@^4.0.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/cliui/-/cliui-4.1.0.tgz#348422dbe82d800b3022eef4f6ac10bf2e4d1b49"
@@ -2469,10 +2566,6 @@ clone@^1.0.2:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/clone/-/clone-1.0.4.tgz#da309cc263df15994c688ca902179ca3c7cd7c7e"
 
-clone@~0.1.9:
-  version "0.1.19"
-  resolved "https://registry.yarnpkg.com/clone/-/clone-0.1.19.tgz#613fb68639b26a494ac53253e15b1a6bd88ada85"
-
 co@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
@@ -2491,13 +2584,6 @@ codecov@^3.8.0:
     js-yaml "3.14.0"
     teeny-request "7.0.1"
     urlgrey "0.4.4"
-
-codeflask@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/codeflask/-/codeflask-1.4.1.tgz#c5229854e3f648377922a75f1145f7316030d3db"
-  dependencies:
-    "@types/prismjs" "^1.9.1"
-    prismjs "^1.14.0"
 
 collection-visit@^1.0.0:
   version "1.0.0"
@@ -2539,7 +2625,7 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
   dependencies:
     delayed-stream "~1.0.0"
 
-comma-separated-tokens@^1.0.5, comma-separated-tokens@^1.0.7:
+comma-separated-tokens@^1.0.7:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/comma-separated-tokens/-/comma-separated-tokens-1.0.8.tgz#632b80b6117867a158f1080ad498b2fbe7e3f5ea"
 
@@ -2586,7 +2672,7 @@ concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
 
-concat-stream@^1.4.4, concat-stream@^1.5.0:
+concat-stream@^1.5.0:
   version "1.6.2"
   resolved "https://registry.yarnpkg.com/concat-stream/-/concat-stream-1.6.2.tgz#904bdf194cd3122fc675c77fc4ac3d4ff0fd1a34"
   dependencies:
@@ -2846,12 +2932,6 @@ crypto-browserify@^3.11.0:
     randombytes "^2.0.0"
     randomfill "^1.0.3"
 
-css-vendor@^0.3.8:
-  version "0.3.8"
-  resolved "https://registry.yarnpkg.com/css-vendor/-/css-vendor-0.3.8.tgz#6421cfd3034ce664fe7673972fd0119fc28941fa"
-  dependencies:
-    is-in-browser "^1.0.2"
-
 css-vendor@^2.0.7:
   version "2.0.7"
   resolved "https://registry.yarnpkg.com/css-vendor/-/css-vendor-2.0.7.tgz#4e6d53d953c187981576d6a542acc9fb57174bda"
@@ -2995,12 +3075,6 @@ defaults@^1.0.3:
   dependencies:
     clone "^1.0.2"
 
-deferred-leveldown@~0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/deferred-leveldown/-/deferred-leveldown-0.2.0.tgz#2cef1f111e1c57870d8bbb8af2650e587cd2f5b4"
-  dependencies:
-    abstract-leveldown "~0.12.1"
-
 define-properties@^1.1.2, define-properties@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/define-properties/-/define-properties-1.1.3.tgz#cf88da6cbee26fe6db7094f61d870cbd84cee9f1"
@@ -3029,10 +3103,6 @@ define-property@^2.0.2:
 delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
-
-delegate@^3.1.2:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/delegate/-/delegate-3.2.0.tgz#b66b71c3158522e8ab5744f720d8ca0c2af59166"
 
 delegates@^1.0.0:
   version "1.0.0"
@@ -3229,7 +3299,7 @@ err-code@^1.0.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/err-code/-/err-code-1.1.2.tgz#06e0116d3028f6aef4806849eb0ea6a748ae6960"
 
-errno@^0.1.1, errno@^0.1.3, errno@~0.1.1, errno@~0.1.7:
+errno@^0.1.3, errno@~0.1.7:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/errno/-/errno-0.1.7.tgz#4684d71779ad39af177e3f007996f7c67c852618"
   dependencies:
@@ -3314,14 +3384,6 @@ esrecurse@^4.1.0:
 estraverse@^4.1.0, estraverse@^4.1.1, estraverse@^4.2.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-4.3.0.tgz#398ad3f3c5a24948be7725e83d11a7de28cdbd1d"
-
-estree-walker@^0.5.2:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-0.5.2.tgz#d3850be7529c9580d815600b53126515e146dd39"
-
-estree-walker@^0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-0.6.1.tgz#53049143f40c6eb918b23671d1fe3219f3a1b362"
 
 esutils@^2.0.2:
   version "2.0.3"
@@ -3647,10 +3709,6 @@ for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
 
-foreach@~2.0.1:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/foreach/-/foreach-2.0.5.tgz#0bee005018aeb260d0a3af3ae658dd0136ec1b99"
-
 forever-agent@~0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/forever-agent/-/forever-agent-0.6.1.tgz#fbc71f0c41adeb37f96c577ad1ed42d8fdacca91"
@@ -3725,12 +3783,6 @@ fsevents@~2.1.2:
 function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
-
-fwd-stream@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/fwd-stream/-/fwd-stream-1.0.4.tgz#ed281cabed46feecf921ee32dc4c50b372ac7cfa"
-  dependencies:
-    readable-stream "~1.0.26-4"
 
 gauge@~2.7.3:
   version "2.7.4"
@@ -3955,12 +4007,6 @@ globby@^9.2.0:
     pify "^4.0.1"
     slash "^2.0.0"
 
-good-listener@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/good-listener/-/good-listener-1.2.2.tgz#d53b30cdf9313dffb7dc9a0d477096aa6d145c50"
-  dependencies:
-    delegate "^3.1.2"
-
 graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.2:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.3.tgz#4a12ff1b60376ef09862c2093edd908328be8423"
@@ -4061,11 +4107,11 @@ hash.js@^1.0.0, hash.js@^1.0.3:
     inherits "^2.0.3"
     minimalistic-assert "^1.0.1"
 
-hast-util-is-element@^1.0.1, hast-util-is-element@^1.0.3:
+hast-util-is-element@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/hast-util-is-element/-/hast-util-is-element-1.0.3.tgz#423b4b26fe8bf1f25950fe052e9ce8f83fd5f6a4"
 
-hast-util-whitespace@^1.0.1, hast-util-whitespace@^1.0.3:
+hast-util-whitespace@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/hast-util-whitespace/-/hast-util-whitespace-1.0.3.tgz#6d161b307bd0693b5ec000c7c7e8b5445109ee34"
 
@@ -4106,11 +4152,11 @@ html-escaper@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/html-escaper/-/html-escaper-2.0.0.tgz#71e87f931de3fe09e56661ab9a29aadec707b491"
 
-html-void-elements@^1.0.3, html-void-elements@^1.0.4:
+html-void-elements@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/html-void-elements/-/html-void-elements-1.0.5.tgz#ce9159494e86d95e45795b166c2021c2cfca4483"
 
-html-whitespace-sensitive-tag-names@^1.0.0, html-whitespace-sensitive-tag-names@^1.0.1:
+html-whitespace-sensitive-tag-names@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/html-whitespace-sensitive-tag-names/-/html-whitespace-sensitive-tag-names-1.0.1.tgz#df3c6d97cb825d38e5d9b7d29cccb115cfc139cb"
 
@@ -4201,7 +4247,7 @@ husky@^3.0.4:
     run-node "^1.0.0"
     slash "^3.0.0"
 
-hyphenate-style-name@^1.0.2, hyphenate-style-name@^1.0.3:
+hyphenate-style-name@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.3.tgz#097bb7fa0b8f1a9cf0bd5c734cf95899981a9b48"
 
@@ -4211,9 +4257,12 @@ iconv-lite@0.4.24, iconv-lite@^0.4.24, iconv-lite@~0.4.13:
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
 
-idb-wrapper@^1.5.0:
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/idb-wrapper/-/idb-wrapper-1.7.2.tgz#8251afd5e77fe95568b1c16152eb44b396767ea2"
+iconv-lite@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.6.2.tgz#ce13d1875b0c3a674bd6a04b7f76b01b1b6ded01"
+  integrity sha512-2y91h5OpQlolefMPmUlivelittSWy0rP+oYVpn6A7GwVHNE8AWzoYOBNmlwks3LobaJxgHCYZAnyNo2GgpNRNQ==
+  dependencies:
+    safer-buffer ">= 2.1.2 < 3.0.0"
 
 ieee754@^1.1.4:
   version "1.1.13"
@@ -4275,10 +4324,6 @@ indent-string@^2.1.0:
 indent-string@^3.0.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/indent-string/-/indent-string-3.2.0.tgz#4a5fd6d27cc332f37e5419a504dbb837105c9289"
-
-indexof@~0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/indexof/-/indexof-0.0.1.tgz#82dc336d232b9062179d05ab3293a66059fd435d"
 
 infer-owner@^1.0.3, infer-owner@^1.0.4:
   version "1.0.4"
@@ -4547,10 +4592,6 @@ is-obj@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/is-obj/-/is-obj-1.0.1.tgz#3e4729ac1f5fde025cd7d83a896dab9f4f67db0f"
 
-is-object@~0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/is-object/-/is-object-0.1.2.tgz#00efbc08816c33cfc4ac8251d132e10dc65098d7"
-
 is-plain-obj@^1.0.0, is-plain-obj@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-plain-obj/-/is-plain-obj-1.1.0.tgz#71a50c8429dfca773c92a390a4a03b39fcd51d3e"
@@ -4619,21 +4660,9 @@ is-wsl@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-wsl/-/is-wsl-1.1.0.tgz#1f16e4aa22b04d1336b66188a66af3c600c3a66d"
 
-is@~0.2.6:
-  version "0.2.7"
-  resolved "https://registry.yarnpkg.com/is/-/is-0.2.7.tgz#3b34a2c48f359972f35042849193ae7264b63562"
-
-isarray@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/isarray/-/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
-
 isarray@1.0.0, isarray@^1.0.0, isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
-
-isbuffer@~0.0.0:
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/isbuffer/-/isbuffer-0.0.0.tgz#38c146d9df528b8bf9b0701c3d43cf12df3fc39b"
 
 isexe@^2.0.0:
   version "2.0.0"
@@ -5153,42 +5182,6 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
-jss-camel-case@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/jss-camel-case/-/jss-camel-case-6.1.0.tgz#ccb1ff8d6c701c02a1fed6fb6fb6b7896e11ce44"
-  dependencies:
-    hyphenate-style-name "^1.0.2"
-
-jss-compose@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/jss-compose/-/jss-compose-5.0.0.tgz#ce01b2e4521d65c37ea42cf49116e5f7ab596484"
-  dependencies:
-    warning "^3.0.0"
-
-jss-default-unit@^8.0.2:
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/jss-default-unit/-/jss-default-unit-8.0.2.tgz#cc1e889bae4c0b9419327b314ab1c8e2826890e6"
-
-jss-expand@^5.3.0:
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/jss-expand/-/jss-expand-5.3.0.tgz#02be076efe650125c842f5bb6fb68786fe441ed6"
-
-jss-extend@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/jss-extend/-/jss-extend-6.2.0.tgz#4af09d0b72fb98ee229970f8ca852fec1ca2a8dc"
-  dependencies:
-    warning "^3.0.0"
-
-jss-global@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/jss-global/-/jss-global-3.0.0.tgz#e19e5c91ab2b96353c227e30aa2cbd938cdaafa2"
-
-jss-nested@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/jss-nested/-/jss-nested-6.0.1.tgz#ef992b79d6e8f63d939c4397b9d99b5cbbe824ca"
-  dependencies:
-    warning "^3.0.0"
-
 jss-plugin-camel-case@10.0.4:
   version "10.0.4"
   resolved "https://registry.yarnpkg.com/jss-plugin-camel-case/-/jss-plugin-camel-case-10.0.4.tgz#3dedecec1e5bba0bf6141c2c05e2ab11ea4b468d"
@@ -5299,37 +5292,6 @@ jss-preset-default@^10.0.0:
     jss-plugin-template "10.0.4"
     jss-plugin-vendor-prefixer "10.0.4"
 
-jss-preset-default@^4.5.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/jss-preset-default/-/jss-preset-default-4.5.0.tgz#d3a457012ccd7a551312014e394c23c4b301cadd"
-  dependencies:
-    jss-camel-case "^6.1.0"
-    jss-compose "^5.0.0"
-    jss-default-unit "^8.0.2"
-    jss-expand "^5.3.0"
-    jss-extend "^6.2.0"
-    jss-global "^3.0.0"
-    jss-nested "^6.0.1"
-    jss-props-sort "^6.0.0"
-    jss-template "^1.0.1"
-    jss-vendor-prefixer "^7.0.0"
-
-jss-props-sort@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/jss-props-sort/-/jss-props-sort-6.0.0.tgz#9105101a3b5071fab61e2d85ea74cc22e9b16323"
-
-jss-template@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/jss-template/-/jss-template-1.0.1.tgz#09aed9d86cc547b07f53ef355d7e1777f7da430a"
-  dependencies:
-    warning "^3.0.0"
-
-jss-vendor-prefixer@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/jss-vendor-prefixer/-/jss-vendor-prefixer-7.0.0.tgz#0166729650015ef19d9f02437c73667231605c71"
-  dependencies:
-    css-vendor "^0.3.8"
-
 jss@*, jss@10.0.4, jss@^10.0.0:
   version "10.0.4"
   resolved "https://registry.yarnpkg.com/jss/-/jss-10.0.4.tgz#46ebdde1c40c9a079d64f3334cb88ae28fd90bfd"
@@ -5338,14 +5300,6 @@ jss@*, jss@10.0.4, jss@^10.0.0:
     csstype "^2.6.5"
     is-in-browser "^1.1.3"
     tiny-warning "^1.0.2"
-
-jss@^9.8.7:
-  version "9.8.7"
-  resolved "https://registry.yarnpkg.com/jss/-/jss-9.8.7.tgz#ed9763fc0f2f0260fc8260dac657af61e622ce05"
-  dependencies:
-    is-in-browser "^1.1.3"
-    symbol-observable "^1.1.0"
-    warning "^3.0.0"
 
 jszip@^3.2.2:
   version "3.2.2"
@@ -5431,82 +5385,6 @@ lerna@^3.16.4:
     "@lerna/version" "3.20.2"
     import-local "^2.0.0"
     npmlog "^4.1.2"
-
-level-blobs@^0.1.7:
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/level-blobs/-/level-blobs-0.1.7.tgz#9ab9b97bb99f1edbf9f78a3433e21ed56386bdaf"
-  dependencies:
-    level-peek "1.0.6"
-    once "^1.3.0"
-    readable-stream "^1.0.26-4"
-
-level-filesystem@^1.0.1:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/level-filesystem/-/level-filesystem-1.2.0.tgz#a00aca9919c4a4dfafdca6a8108d225aadff63b3"
-  dependencies:
-    concat-stream "^1.4.4"
-    errno "^0.1.1"
-    fwd-stream "^1.0.4"
-    level-blobs "^0.1.7"
-    level-peek "^1.0.6"
-    level-sublevel "^5.2.0"
-    octal "^1.0.0"
-    once "^1.3.0"
-    xtend "^2.2.0"
-
-level-fix-range@2.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/level-fix-range/-/level-fix-range-2.0.0.tgz#c417d62159442151a19d9a2367868f1724c2d548"
-  dependencies:
-    clone "~0.1.9"
-
-level-fix-range@~1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/level-fix-range/-/level-fix-range-1.0.2.tgz#bf15b915ae36d8470c821e883ddf79cd16420828"
-
-"level-hooks@>=4.4.0 <5":
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/level-hooks/-/level-hooks-4.5.0.tgz#1b9ae61922930f3305d1a61fc4d83c8102c0dd93"
-  dependencies:
-    string-range "~1.2"
-
-level-js@^2.1.3:
-  version "2.2.4"
-  resolved "https://registry.yarnpkg.com/level-js/-/level-js-2.2.4.tgz#bc055f4180635d4489b561c9486fa370e8c11697"
-  dependencies:
-    abstract-leveldown "~0.12.0"
-    idb-wrapper "^1.5.0"
-    isbuffer "~0.0.0"
-    ltgt "^2.1.2"
-    typedarray-to-buffer "~1.0.0"
-    xtend "~2.1.2"
-
-level-peek@1.0.6, level-peek@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/level-peek/-/level-peek-1.0.6.tgz#bec51c72a82ee464d336434c7c876c3fcbcce77f"
-  dependencies:
-    level-fix-range "~1.0.2"
-
-level-sublevel@^5.2.0:
-  version "5.2.3"
-  resolved "https://registry.yarnpkg.com/level-sublevel/-/level-sublevel-5.2.3.tgz#744c12c72d2e72be78dde3b9b5cd84d62191413a"
-  dependencies:
-    level-fix-range "2.0"
-    level-hooks ">=4.4.0 <5"
-    string-range "~1.2.1"
-    xtend "~2.0.4"
-
-levelup@^0.18.2:
-  version "0.18.6"
-  resolved "https://registry.yarnpkg.com/levelup/-/levelup-0.18.6.tgz#e6a01cb089616c8ecc0291c2a9bd3f0c44e3e5eb"
-  dependencies:
-    bl "~0.8.1"
-    deferred-leveldown "~0.2.0"
-    errno "~0.1.1"
-    prr "~0.0.0"
-    readable-stream "~1.0.26"
-    semver "~2.3.1"
-    xtend "~3.0.0"
 
 leven@^3.1.0:
   version "3.1.0"
@@ -5678,19 +5556,9 @@ lru-cache@^5.1.1:
   dependencies:
     yallist "^3.0.2"
 
-ltgt@^2.1.2:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/ltgt/-/ltgt-2.2.1.tgz#f35ca91c493f7b73da0e07495304f17b31f87ee5"
-
 macos-release@^2.2.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/macos-release/-/macos-release-2.3.0.tgz#eb1930b036c0800adebccd5f17bc4c12de8bb71f"
-
-magic-string@^0.22.5:
-  version "0.22.5"
-  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.22.5.tgz#8e9cf5afddf44385c1da5bc2a6a0dbd10b03657e"
-  dependencies:
-    vlq "^0.2.2"
 
 magic-string@^0.25.4:
   version "0.25.7"
@@ -6318,18 +6186,6 @@ object-keys@^1.0.11, object-keys@^1.0.12, object-keys@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.1.1.tgz#1c47f272df277f3b1daf061677d9c82e2322c60e"
 
-object-keys@~0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-0.2.0.tgz#cddec02998b091be42bf1035ae32e49f1cb6ea67"
-  dependencies:
-    foreach "~2.0.1"
-    indexof "~0.0.1"
-    is "~0.2.6"
-
-object-keys@~0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-0.4.0.tgz#28a6aae7428dd2c3a92f3d95f21335dd204e0336"
-
 object-visit@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/object-visit/-/object-visit-1.0.1.tgz#f79c4493af0c5377b59fe39d395e41042dd045bb"
@@ -6357,10 +6213,6 @@ object.pick@^1.3.0:
   resolved "https://registry.yarnpkg.com/object.pick/-/object.pick-1.3.0.tgz#87a10ac4c1694bd2e1cbf53591a66141fb5dd747"
   dependencies:
     isobject "^3.0.1"
-
-octal@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/octal/-/octal-1.0.0.tgz#63e7162a68efbeb9e213588d58e989d1e5c4530b"
 
 octokit-pagination-methods@^1.1.0:
   version "1.1.0"
@@ -6777,10 +6629,6 @@ prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
 
-prettier@^1.17.0:
-  version "1.19.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.19.1.tgz#f7d7f5ff8a9cd872a7be4ca142095956a60797cb"
-
 prettier@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.0.4.tgz#2d1bae173e355996ee355ec9830a7a1ee05457ef"
@@ -6814,17 +6662,6 @@ pretty-quick@^2.0.1:
     ignore "^5.1.4"
     mri "^1.1.4"
     multimatch "^4.0.0"
-
-prismjs@^1.14.0, prismjs@^1.17.1:
-  version "1.21.0"
-  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.21.0.tgz#36c086ec36b45319ec4218ee164c110f9fc015a3"
-  integrity sha512-uGdSIu1nk3kej2iZsLyDoJ7e9bnPzIgY0naW/HdknGj61zScaprVEVGHrPoXqI+M9sP0NDnTK2jpkvmldpuqDw==
-  optionalDependencies:
-    clipboard "^2.0.0"
-
-process-es6@^0.11.2, process-es6@^0.11.6:
-  version "0.11.6"
-  resolved "https://registry.yarnpkg.com/process-es6/-/process-es6-0.11.6.tgz#c6bb389f9a951f82bd4eb169600105bd2ff9c778"
 
 process-nextick-args@~2.0.0:
   version "2.0.1"
@@ -6862,7 +6699,7 @@ promzard@^0.3.0:
   dependencies:
     read "1"
 
-property-information@^5.0.1, property-information@^5.1.0:
+property-information@^5.1.0:
   version "5.4.0"
   resolved "https://registry.yarnpkg.com/property-information/-/property-information-5.4.0.tgz#16e08f13f4e5c4a7be2e4ec431c01c4f8dba869a"
   dependencies:
@@ -6888,10 +6725,6 @@ proxy-addr@~2.0.5:
   dependencies:
     forwarded "~0.1.2"
     ipaddr.js "1.9.0"
-
-prr@~0.0.0:
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/prr/-/prr-0.0.0.tgz#1a84b85908325501411853d0081ee3fa86e2926a"
 
 prr@~1.0.1:
   version "1.0.1"
@@ -7100,24 +6933,6 @@ read@1, read@~1.0.1:
     inherits "^2.0.3"
     string_decoder "^1.1.1"
     util-deprecate "^1.0.1"
-
-readable-stream@^1.0.26-4:
-  version "1.1.14"
-  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-1.1.14.tgz#7cf4c54ef648e3813084c636dd2079e166c081d9"
-  dependencies:
-    core-util-is "~1.0.0"
-    inherits "~2.0.1"
-    isarray "0.0.1"
-    string_decoder "~0.10.x"
-
-readable-stream@~1.0.26, readable-stream@~1.0.26-4:
-  version "1.0.34"
-  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-1.0.34.tgz#125820e34bc842d2f2aaafafe4c2916ee32c157c"
-  dependencies:
-    core-util-is "~1.0.0"
-    inherits "~2.0.1"
-    isarray "0.0.1"
-    string_decoder "~0.10.x"
 
 readdir-scoped-modules@^1.0.0:
   version "1.1.0"
@@ -7335,32 +7150,6 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rollup-plugin-node-builtins@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-node-builtins/-/rollup-plugin-node-builtins-2.1.2.tgz#24a1fed4a43257b6b64371d8abc6ce1ab14597e9"
-  dependencies:
-    browserify-fs "^1.0.0"
-    buffer-es6 "^4.9.2"
-    crypto-browserify "^3.11.0"
-    process-es6 "^0.11.2"
-
-rollup-plugin-node-globals@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-node-globals/-/rollup-plugin-node-globals-1.4.0.tgz#5e1f24a9bb97c0ef51249f625e16c7e61b7c020b"
-  dependencies:
-    acorn "^5.7.3"
-    buffer-es6 "^4.9.3"
-    estree-walker "^0.5.2"
-    magic-string "^0.22.5"
-    process-es6 "^0.11.6"
-    rollup-pluginutils "^2.3.1"
-
-rollup-pluginutils@^2.3.1:
-  version "2.8.2"
-  resolved "https://registry.yarnpkg.com/rollup-pluginutils/-/rollup-pluginutils-2.8.2.tgz#72f2af0748b592364dbd3389e600e5a9444a351e"
-  dependencies:
-    estree-walker "^0.6.1"
-
 rsvp@^4.8.4:
   version "4.8.5"
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-4.8.5.tgz#c8f155311d167f68f21e168df71ec5b083113734"
@@ -7401,7 +7190,7 @@ safe-regex@^1.1.0:
   dependencies:
     ret "~0.1.10"
 
-"safer-buffer@>= 2.1.2 < 3", safer-buffer@^2.0.2, safer-buffer@^2.1.0, safer-buffer@~2.1.0:
+"safer-buffer@>= 2.1.2 < 3", "safer-buffer@>= 2.1.2 < 3.0.0", safer-buffer@^2.0.2, safer-buffer@^2.1.0, safer-buffer@~2.1.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
 
@@ -7431,10 +7220,6 @@ schema-utils@^1.0.0:
     ajv-errors "^1.0.0"
     ajv-keywords "^3.1.0"
 
-select@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/select/-/select-1.1.2.tgz#0e7350acdec80b1108528786ec1d4418d11b396d"
-
 semver-compare@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/semver-compare/-/semver-compare-1.0.0.tgz#0dee216a1c941ab37e9efb1788f6afc5ff5537fc"
@@ -7446,10 +7231,6 @@ semver-compare@^1.0.0:
 semver@^6.0.0, semver@^6.2.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
-
-semver@~2.3.1:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-2.3.2.tgz#b9848f25d6cf36333073ec9ef8856d42f1233e52"
 
 send@0.17.1:
   version "0.17.1"
@@ -7660,7 +7441,7 @@ sourcemap-codec@^1.4.4:
   version "1.4.8"
   resolved "https://registry.yarnpkg.com/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz#ea804bd94857402e6992d05a38ef1ae35a9ab4c4"
 
-space-separated-tokens@^1.1.2, space-separated-tokens@^1.1.4:
+space-separated-tokens@^1.1.4:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/space-separated-tokens/-/space-separated-tokens-1.1.5.tgz#85f32c3d10d9682007e917414ddc5c26d1aa6899"
 
@@ -7788,10 +7569,6 @@ string-length@^2.0.0:
     astral-regex "^1.0.0"
     strip-ansi "^4.0.0"
 
-string-range@~1.2, string-range@~1.2.1:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/string-range/-/string-range-1.2.2.tgz#a893ed347e72299bc83befbbf2a692a8d239d5dd"
-
 string-width@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-1.0.2.tgz#118bdf5b8cdc51a2a7e70d211e07e2b0b9b107d3"
@@ -7843,24 +7620,11 @@ string_decoder@^1.0.0, string_decoder@^1.1.1:
   dependencies:
     safe-buffer "~5.2.0"
 
-string_decoder@~0.10.x:
-  version "0.10.31"
-  resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-0.10.31.tgz#62e203bc41766c6c28c9fc84301dab1c5310fa94"
-
 string_decoder@~1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-1.1.1.tgz#9cf1611ba62685d7030ae9e4ba34149c3af03fc8"
   dependencies:
     safe-buffer "~5.1.0"
-
-stringify-entities@^1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/stringify-entities/-/stringify-entities-1.3.2.tgz#a98417e5471fd227b3e45d3db1861c11caf668f7"
-  dependencies:
-    character-entities-html4 "^1.0.0"
-    character-entities-legacy "^1.0.0"
-    is-alphanumerical "^1.0.0"
-    is-hexadecimal "^1.0.0"
 
 stringify-entities@^2.0.0:
   version "2.0.0"
@@ -7962,7 +7726,7 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-symbol-observable@^1.1.0, symbol-observable@^1.2.0:
+symbol-observable@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
 
@@ -8085,10 +7849,6 @@ timers-browserify@^2.0.4:
   resolved "https://registry.yarnpkg.com/timers-browserify/-/timers-browserify-2.0.11.tgz#800b1f3eee272e5bc53ee465a04d0e804c31211f"
   dependencies:
     setimmediate "^1.0.4"
-
-tiny-emitter@^2.0.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.1.0.tgz#1d1a56edfc51c43e863cbb5382a72330e3555423"
 
 tiny-warning@^1.0.2:
   version "1.0.3"
@@ -8272,15 +8032,11 @@ type-is@~1.6.17, type-is@~1.6.18:
     media-typer "0.3.0"
     mime-types "~2.1.24"
 
-typedarray-to-buffer@~1.0.0:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/typedarray-to-buffer/-/typedarray-to-buffer-1.0.4.tgz#9bb8ba0e841fb3f4cf1fe7c245e9f3fa8a5fe99c"
-
 typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typescript@3.7.5, typescript@^3.7.5:
+typescript@^3.7.5:
   version "3.7.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.5.tgz#0692e21f65fd4108b9330238aac11dd2e177a1ae"
 
@@ -8320,7 +8076,7 @@ unique-slug@^2.0.0:
   dependencies:
     imurmurhash "^0.1.4"
 
-unist-util-is@^2.1.2, unist-util-is@^2.1.3:
+unist-util-is@^2.1.3:
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/unist-util-is/-/unist-util-is-2.1.3.tgz#459182db31f4742fceaea88d429693cbf0043d20"
 
@@ -8451,10 +8207,6 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-vlq@^0.2.2:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/vlq/-/vlq-0.2.3.tgz#8f3e4328cf63b1540c0d67e1b2778386f8975b26"
-
 vm-browserify@^1.0.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
@@ -8470,12 +8222,6 @@ walker@^1.0.7, walker@~1.0.5:
   resolved "https://registry.yarnpkg.com/walker/-/walker-1.0.7.tgz#2f7f9b8fd10d677262b18a884e28d19618e028fb"
   dependencies:
     makeerror "1.0.x"
-
-warning@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/warning/-/warning-3.0.0.tgz#32e5377cb572de4ab04753bdf8821c01ed605b7c"
-  dependencies:
-    loose-envify "^1.0.0"
 
 watchpack@^1.6.0:
   version "1.6.0"
@@ -8724,30 +8470,9 @@ xml-name-validator@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/xml-name-validator/-/xml-name-validator-3.0.0.tgz#6ae73e06de4d8c6e47f9fb181f78d648ad457c6a"
 
-xtend@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/xtend/-/xtend-2.2.0.tgz#eef6b1f198c1c8deafad8b1765a04dad4a01c5a9"
-
 xtend@^4.0.0, xtend@^4.0.1, xtend@~4.0.1:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
-
-xtend@~2.0.4:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/xtend/-/xtend-2.0.6.tgz#5ea657a6dba447069c2e59c58a1138cb0c5e6cee"
-  dependencies:
-    is-object "~0.1.2"
-    object-keys "~0.2.0"
-
-xtend@~2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/xtend/-/xtend-2.1.2.tgz#6efecc2a4dad8e6962c4901b337ce7ba87b5d28b"
-  dependencies:
-    object-keys "~0.4.0"
-
-xtend@~3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/xtend/-/xtend-3.0.0.tgz#5cce7407baf642cba7becda568111c493f59665a"
 
 y18n@^3.2.1:
   version "3.2.1"
