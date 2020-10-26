@@ -1,0 +1,236 @@
+{
+  "type": "VariableDeclaration",
+  "kind": "const",
+  "declarations": [
+    {
+      "type": "VariableDeclarator",
+      "id": {
+        "type": "Identifier",
+        "name": "Form"
+      },
+      "init": {
+        "type": "ArrowFunctionExpression",
+        "params": [],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "JSXElement",
+                "openingElement": {
+                  "type": "JSXOpeningElement",
+                  "name": {
+                    "type": "JSXIdentifier",
+                    "name": "div"
+                  },
+                  "attributes": [],
+                  "selfClosing": false
+                },
+                "closingElement": {
+                  "type": "JSXClosingElement",
+                  "name": {
+                    "type": "JSXIdentifier",
+                    "name": "div"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "JSXElement",
+                    "openingElement": {
+                      "type": "JSXOpeningElement",
+                      "name": {
+                        "type": "JSXIdentifier",
+                        "name": "Helmet"
+                      },
+                      "attributes": [],
+                      "selfClosing": false
+                    },
+                    "closingElement": {
+                      "type": "JSXClosingElement",
+                      "name": {
+                        "type": "JSXIdentifier",
+                        "name": "Helmet"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "JSXElement",
+                        "openingElement": {
+                          "type": "JSXOpeningElement",
+                          "name": {
+                            "type": "JSXIdentifier",
+                            "name": "title"
+                          },
+                          "attributes": [],
+                          "selfClosing": false
+                        },
+                        "closingElement": {
+                          "type": "JSXClosingElement",
+                          "name": {
+                            "type": "JSXIdentifier",
+                            "name": "title"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "JSXText",
+                            "value": "表单页示例"
+                          },
+                          {
+                            "type": "JSXText",
+                            "value": "\n"
+                          }
+                        ],
+                        "selfClosing": false
+                      }
+                    ],
+                    "selfClosing": false
+                  },
+                  {
+                    "type": "JSXElement",
+                    "openingElement": {
+                      "type": "JSXOpeningElement",
+                      "name": {
+                        "type": "JSXIdentifier",
+                        "name": "HtForm"
+                      },
+                      "attributes": [
+                        {
+                          "type": "JSXAttribute",
+                          "name": {
+                            "type": "JSXIdentifier",
+                            "name": "buttons"
+                          },
+                          "value": {
+                            "type": "JSXExpressionContainer",
+                            "expression": {
+                              "type": "ArrayExpression",
+                              "elements": [
+                                {
+                                  "type": "StringLiteral",
+                                  "value": "submit"
+                                }
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "type": "JSXAttribute",
+                          "name": {
+                            "type": "JSXIdentifier",
+                            "name": "fields"
+                          },
+                          "value": {
+                            "type": "JSXExpressionContainer",
+                            "expression": {
+                              "type": "ArrayExpression",
+                              "elements": [
+                                {
+                                  "type": "ObjectExpression",
+                                  "properties": [
+                                    {
+                                      "type": "ObjectProperty",
+                                      "key": {
+                                        "type": "StringLiteral",
+                                        "value": "field"
+                                      },
+                                      "value": {
+                                        "type": "StringLiteral",
+                                        "value": "name"
+                                      },
+                                      "computed": false,
+                                      "shorthand": false,
+                                      "decorators": null
+                                    },
+                                    {
+                                      "type": "ObjectProperty",
+                                      "key": {
+                                        "type": "StringLiteral",
+                                        "value": "title"
+                                      },
+                                      "value": {
+                                        "type": "StringLiteral",
+                                        "value": "姓名"
+                                      },
+                                      "computed": false,
+                                      "shorthand": false,
+                                      "decorators": null
+                                    },
+                                    {
+                                      "type": "ObjectProperty",
+                                      "key": {
+                                        "type": "StringLiteral",
+                                        "value": "v-if"
+                                      },
+                                      "value": {
+                                        "type": "StringLiteral",
+                                        "value": "<%:= true %>"
+                                      },
+                                      "computed": false,
+                                      "shorthand": false,
+                                      "decorators": null
+                                    },
+                                    {
+                                      "type": "ObjectProperty",
+                                      "key": {
+                                        "type": "StringLiteral",
+                                        "value": "colProps"
+                                      },
+                                      "value": {
+                                        "type": "ObjectExpression",
+                                        "properties": []
+                                      },
+                                      "computed": false,
+                                      "shorthand": false,
+                                      "decorators": null
+                                    },
+                                    {
+                                      "type": "ObjectProperty",
+                                      "key": {
+                                        "type": "StringLiteral",
+                                        "value": "disabled"
+                                      },
+                                      "value": {
+                                        "type": "BooleanLiteral",
+                                        "value": false
+                                      },
+                                      "computed": false,
+                                      "shorthand": false,
+                                      "decorators": null
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ],
+                      "selfClosing": false
+                    },
+                    "closingElement": {
+                      "type": "JSXClosingElement",
+                      "name": {
+                        "type": "JSXIdentifier",
+                        "name": "HtForm"
+                      }
+                    },
+                    "children": [],
+                    "selfClosing": false
+                  },
+                  {
+                    "type": "JSXText",
+                    "value": "\n"
+                  }
+                ],
+                "selfClosing": false
+              }
+            }
+          ],
+          "directives": []
+        },
+        "async": false
+      }
+    }
+  ]
+}
