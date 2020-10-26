@@ -147,10 +147,6 @@ export const addAttributeToJSXTag = (
  * equivalent
  */
 const getProperAttributeValueAssignment = (value: string | unknown, t = types) => {
-  if (!value) {
-    return null
-  }
-
   if (typeof value === 'string') {
     return t.stringLiteral(value)
   }
