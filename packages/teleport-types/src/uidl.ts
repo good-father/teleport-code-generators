@@ -120,6 +120,11 @@ export interface UIDLSlotNode {
   content: UIDLElementNode | UIDLStaticValue | UIDLDynamicReference
 }
 
+export interface UIDLFuncNode {
+  type: 'func'
+  content: string
+}
+
 export interface UIDLNestedStyleDeclaration {
   type: 'nested-style'
   content: UIDLStyleDefinitions
@@ -194,12 +199,14 @@ export type UIDLNode =
   | UIDLConditionalNode
   | UIDLImportReference
   | UIDLSlotNode
+  | UIDLFuncNode
 
 export type UIDLAttributeValue =
   | UIDLDynamicReference
   | UIDLStaticValue
   | UIDLImportReference
   | UIDLSlotNode
+  | UIDLFuncNode
 
 export type UIDLStyleValue = UIDLDynamicReference | UIDLStaticValue
 

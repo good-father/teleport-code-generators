@@ -1,4 +1,5 @@
 import * as types from '@babel/types'
+import * as parser from '@babel/parser'
 import ParsedASTNode from './parsed-ast'
 import { StringUtils } from '@teleporthq/teleport-shared'
 import { UIDLStateDefinition, UIDLPropDefinition } from '@teleporthq/teleport-types'
@@ -49,7 +50,7 @@ const getClassAttribute = (
   return classNameAttribute as types.JSXAttribute
 }
 
-export const addSlotAttributesToJSXTag = (
+export const addSlotAttributeToJSXTag = (
   jsxASTNode: types.JSXElement,
   name: string,
   value: string | types.JSXElement,
@@ -57,6 +58,16 @@ export const addSlotAttributesToJSXTag = (
 ) => {
   const content =
     typeof value === 'string' ? t.stringLiteral(value) : t.jsxExpressionContainer(value)
+  jsxASTNode.openingElement.attributes.push(t.jsxAttribute(t.jsxIdentifier(name), content))
+}
+
+export const addFuncAttributeToJSXTag = (
+  jsxASTNode: types.JSXElement,
+  name: string,
+  value: string,
+  t = types
+) => {
+  const content = t.jsxExpressionContainer(parser.parseExpression(value))
   jsxASTNode.openingElement.attributes.push(t.jsxAttribute(t.jsxIdentifier(name), content))
 }
 
@@ -185,6 +196,11 @@ export const objectToObjectExpression = (
   objectMap: { [key: string]: ParsedASTNode | unknown },
   t = types
 ) => {
+  if (objectMap.type === 'func') {
+    const res = parser.parseExpression(objectMap.content as string, {})
+    return res
+  }
+
   const props = Object.keys(objectMap).reduce((acc: unknown[], key) => {
     const keyIdentifier = t.stringLiteral(key)
     const value = objectMap[key]
@@ -236,6 +252,7 @@ type ExpressionLiteral =
   | types.ArrayExpression
   | types.ObjectExpression
   | types.NullLiteral
+  | types.Expression
 
 export const convertValueToLiteral = (
   // tslint:disable-next-line no-any

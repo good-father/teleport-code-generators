@@ -421,6 +421,10 @@ export const transformStringAssignmentToJson = (
   }
 }
 
+/**
+ * 将特殊语法转换为标准格式
+ * @param styleObject
+ */
 export const transformStylesAssignmentsToJson = (
   styleObject: Record<string, unknown>
 ): UIDLStyleDefinitions => {

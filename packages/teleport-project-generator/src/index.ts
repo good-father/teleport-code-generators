@@ -137,6 +137,7 @@ export class ProjectGenerator {
       throw new Error(schemaValidationResult.errorMsg)
     }
 
+    // 将特殊语法格式为标准格式
     const uidl = Parser.parseProjectJSON(cleanedUIDL)
     const contentValidationResult = this.validator.validateProjectContent(uidl)
     if (!contentValidationResult.valid) {

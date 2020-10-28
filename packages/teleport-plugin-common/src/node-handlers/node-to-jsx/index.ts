@@ -24,7 +24,8 @@ import {
   addChildJSXTag,
   addAttributeToJSXTag,
   addDynamicAttributeToJSXTag,
-  addSlotAttributesToJSXTag,
+  addSlotAttributeToJSXTag,
+  addFuncAttributeToJSXTag,
 } from '../../utils/ast-utils'
 import { createJSXTag, createSelfClosingJSXTag } from '../../builders/ast-builders'
 import { DEFAULT_JSX_OPTIONS } from './constants'
@@ -61,7 +62,6 @@ const generateElementNode: NodeToJSX<UIDLElementNode, types.JSXElement> = (
       }
     }
   }
-
   const elementName =
     dependency && dependency.type === 'local' && options.customElementTag
       ? options.customElementTag(tagName)
@@ -86,10 +86,13 @@ const generateElementNode: NodeToJSX<UIDLElementNode, types.JSXElement> = (
         case 'static':
           addAttributeToJSXTag(elementTag, attrKey, attributeValue.content)
           break
+        case 'func':
+          addFuncAttributeToJSXTag(elementTag, attrKey, attributeValue.content)
+          break
         case 'slot':
           // extra slot as props
           const slotContent = generateNode(attributeValue.content, params, jsxOptions)
-          addSlotAttributesToJSXTag(elementTag, attrKey, slotContent as types.JSXElement | string)
+          addSlotAttributeToJSXTag(elementTag, attrKey, slotContent as types.JSXElement | string)
           break
         default:
           throw new Error(
